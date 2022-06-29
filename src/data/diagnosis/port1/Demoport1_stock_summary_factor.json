@@ -1,0 +1,36 @@
+{
+    "indicator": [
+        {
+            "name": "Momentum",
+            "max": 5.0
+        },
+        {
+            "name": "Value",
+            "max": 5.0
+        },
+        {
+            "name": "Volatility",
+            "max": 5.0
+        },
+        {
+            "name": "Growth",
+            "max": 5.0
+        },
+        {
+            "name": "Profitability",
+            "max": 5.0
+        }
+    ],
+    "data": [
+        {
+            "value": [
+                2.5,
+                2.1,
+                1.9,
+                2.2,
+                2.3
+            ],
+            "name": "My Portfolio"
+        }
+    ]
+}

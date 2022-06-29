@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "title": "Index Name",
+    "list": [
+      { "id": 1, "name": "S&P 500" },
+      { "id": 2, "name": "NASDAQ" },
+      { "id": 3, "name": "KOSPI" },
+      { "id": 4, "name": "KOSDAQ" },
+      { "id": 5, "name": "NASD" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Asset Class",
+    "list": [
+      { "id": 1, "name": "Alternatives" },
+      { "id": 2, "name": "Bonds" },
+      { "id": 3, "name": "Commodity" },
+      { "id": 4, "name": "Currency" },
+      { "id": 5, "name": "Equity" },
+      { "id": 6, "name": "Multi-Asset" },
+      { "id": 7, "name": "Real Estate" },
+      { "id": 8, "name": "Volatility" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Leveraged/Inverse",
+    "list": [
+      { "id": 1, "name": "None" },
+      { "id": 2, "name": "Leveraged" },
+      { "id": 3, "name": "Inverse" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Size",
+    "list": [
+      { "id": 1, "name": "Large Cap" },
+      { "id": 2, "name": "Total Market" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Economic Development",
+    "list": [
+      { "id": 1, "name": "Developed Market" },
+      { "id": 2, "name": "Emerging Market" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Region",
+    "list": [
+      { "id": 1, "name": "Asia" },
+      { "id": 2, "name": "North America" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Geography",
+    "list": [
+      { "id": 1, "name": "USA" },
+      { "id": 2, "name": "South Korea" }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Category",
+    "list": [
+      { "id": 1, "name": "#Tag1" },
+      { "id": 2, "name": "#Tag2" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Return",
+    "list": []
+  }
+]

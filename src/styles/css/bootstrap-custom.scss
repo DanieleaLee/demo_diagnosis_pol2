@@ -1,0 +1,46 @@
+$font-family-base: "Titillium Web";
+$font-family-sans-serif: "Titillium Web", sans-serif;
+$font-family-monospace: "Titillium Web";
+$paragraph-margin-bottom: 0rem;
+$link-hover-color: auto;
+$link-hover-decoration: none;
+$grid-gutter-width: 0rem;
+//$line-height-base: 1.5;
+
+//$grid-breakpoints: (
+//  xs: 0,
+//  sm: 576px,
+//  md: 768px,
+//  lg: 992px,
+//  xl: 1200px,
+//);
+
+// 각 화면별 최대 높이 고정
+//$container-max-widths: (
+//        sm: 540px,
+//        md: 720px,
+//        lg: 960px,
+//        xl: 1140px,
+//        xxl: 1320px
+//) !default;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+
+//@import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/utilities/api"; // mt 등등

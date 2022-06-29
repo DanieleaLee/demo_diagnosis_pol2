@@ -1,0 +1,126 @@
+[
+  {
+    "id": "portfolio1",
+    "optionText": "Overlaid Portfolio1 (Sector Fixed)",
+    "description": {
+      "holdings": 52,
+      "turnover": "22%",
+      "text": "The purpose of \u201cSector Class Fixed\u201d is not only to overlay what you selected layer also to minimize exposure change of sector between original Portfolio and Overlaid Portfolio"
+    },
+    "score": {
+      "Goldilocks": 62,
+      "Monetary Policy": 57,
+      "Inflation": 45,
+      
+      "New Tech & Value": 53,
+      "Profitability": 72,
+      "Earnings Quality": 92,
+      "Yield Curve Steepening": 36,
+      "Leverage": 24,
+      "Metaverse": 31,
+      "Momentum": 12,
+
+      "Deflation": 10,
+      "Stagflation": 20,
+      "Yield Curve Flattening": 30,
+      "Oil Price": 40,
+      "Blockchain": 50,
+      "Reisidual Volatility": 60,
+      "Dividend Yield": 70,
+      "Liquidity": 80
+    }
+  },
+  {
+    "id": "portfolio2",
+    "optionText": "Overlaid Portfolio2 (Asset Class Fixed)",
+    "description": {
+      "holdings": 53,
+      "turnover": "17%",
+      "text": "The purpose of \u201cAsset Class Fixed\u201d is not only to overlay what you selected layer also to minimize exposure change of Asset Class between original Portfolio and Overlaid Portfolio"
+    },
+    "score": {
+      "Goldilocks": 32,
+      "Monetary Policy": 11,
+      "Inflation": 12,
+
+      "New Tech & Value": 51,
+      "Profitability": 70,
+      "Earnings Quality": 99,
+      "Yield Curve Steepening": 31,
+      "Leverage": 21,
+      "Metaverse": 21,
+      "Momentum": 10,
+
+      "Deflation": 20,
+      "Stagflation": 30,
+      "Yield Curve Flattening": 40,
+      "Oil Price": 50,
+      "Blockchain": 60,
+      "Reisidual Volatility": 70,
+      "Dividend Yield": 80,
+      "Liquidity": 90
+    }
+  },
+  {
+    "id": "portfolio3",
+    "optionText": "Overlaid Portfolio3 (Factor Fixed)",
+    "description": {
+      "holdings": 50,
+      "turnover": "10%",
+      "text": "The purpose of \u201cFactor Fixed\u201d is not only to overlay what you selected layer also to minimize sensitivity change of each factor between original Portfolio and Overlaid Portfolio"
+    },
+    "score": {
+      "Goldilocks": 42,
+      "Monetary Policy": 11,
+      "Inflation": 20,
+
+      "New Tech & Value": 23,
+      "Profitability": 22,
+      "Earnings Quality": 82,
+      "Yield Curve Steepening": 16,
+      "Leverage": 14,
+      "Metaverse": 21,
+      "Momentum": 12,
+
+      "Deflation": 15,
+      "Stagflation": 25,
+      "Yield Curve Flattening": 35,
+      "Oil Price": 45,
+      "Blockchain": 55,
+      "Reisidual Volatility": 65,
+      "Dividend Yield": 75,
+      "Liquidity": 85
+    }
+  },
+  {
+    "id": "portfolio4",
+    "optionText": "Overlaid Portfolio4",
+    "description": {
+      "holdings": 60,
+      "turnover": "55%",
+      "text": "Only reflecting constraints from Layer configuration you input"
+    },
+    "score": {
+      "Goldilocks": 51,
+      "Monetary Policy": 48,
+      "Inflation": 69,
+
+      "New Tech & Value": 73,
+      "Profitability": 58,
+      "Earnings Quality": 79,
+      "Yield Curve Steepening": 46,
+      "Leverage": 24,
+      "Metaverse": 31,
+      "Momentum": 12,
+
+      "Deflation": 25,
+      "Stagflation": 35,
+      "Yield Curve Flattening": 34,
+      "Oil Price": 41,
+      "Blockchain": 59,
+      "Reisidual Volatility": 62,
+      "Dividend Yield": 73,
+      "Liquidity": 67
+    }
+  }
+]

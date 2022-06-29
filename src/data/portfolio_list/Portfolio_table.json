@@ -1,0 +1,76 @@
+[{
+  "id": 1,
+  "portfolio_name": "QRAFT_NVQ_ETF",
+  "underlaying_assets": "Equties",
+  "holdings": 99,
+  "source": "Portfolio Generation"
+}, {
+  "id": 2,
+  "portfolio_name": "QRAFT_AMOM_ETF",
+  "underlaying_assets": "Equties",
+  "holdings": 50,
+  "source": "Upload"
+}, {
+  "id": 3,
+  "portfolio_name": "SPY_Inflation_protected_overlaid",
+  "underlaying_assets": "Equties",
+  "holdings": 454,
+  "source": "Overlay"
+}, {
+  "id": 4,
+  "portfolio_name": "QRAFT_Cash_Allocation_model",
+  "underlaying_assets": "Cash, ETFs",
+  "holdings": 14,
+  "source": "Portfolio Generation"
+}, {
+  "id": 5,
+  "portfolio_name": "Vanguard Total Stock Market ETF",
+  "underlaying_assets": "Equties",
+  "holdings": 4081,
+  "source": "Upload"
+}, {
+  "id": 6,
+  "portfolio_name": "Invesco QQQ Trust",
+  "underlaying_assets": "Equties",
+  "holdings": 102,
+  "source": "Upload"
+}, {
+  "id": 7,
+  "portfolio_name": "Stocks\/Bonds 60\/40",
+  "underlaying_assets": "ETFs",
+  "holdings": 2,
+  "source": "Upload"
+}, {
+  "id": 8,
+  "portfolio_name": "QRAFT_QRFT_ETF",
+  "underlaying_assets": "Equties",
+  "holdings": 350,
+  "source": "Portfolio Generation"
+}, {
+  "id": 9,
+  "portfolio_name": "All Weather Portfolio",
+  "underlaying_assets": "ETFs",
+  "holdings": 5,
+  "source": "Upload"
+}, {
+  "id": 10,
+  "portfolio_name": "Eugen_ocio_TAA",
+  "underlaying_assets": "Equties, Fixed_Income",
+  "holdings": 27,
+  "source": "Upload"
+}, {
+  "id": 11,
+  "portfolio_name": "Sandwich Portfolio",
+  "underlaying_assets": "ETFs",
+  "holdings": 8,
+  "source": "Upload"
+}, {
+  "id": 12,
+  "portfolio_name": "SPY_Raw",
+  "underlaying_assets": "Equties",
+  "holdings": 500,
+  "source": "Upload"
+}
+
+
+]

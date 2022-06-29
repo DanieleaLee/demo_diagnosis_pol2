@@ -1,0 +1,251 @@
+[
+  {
+    "id": 1,
+    "name": "Whole",
+    "start_date": "2007-01-01",
+    "end_date": "2022-05-01",
+    "months": 184,
+    "tb_data": [
+      {
+        "id": 1,
+        "hip": "Original Portfolio",
+        "cagr": "23.81%",
+        "volatility": "22.63%",
+        "mdd": "-55.33%",
+        "sharpe": 0.95,
+        "tracking_error": "14.69%",
+        "beta": 1.59,
+        "chart": 25
+      },
+      {
+        "id": 2,
+        "hip": "Benchmark",
+        "cagr": "17.72%",
+        "volatility": "10.69%",
+        "mdd": "-53.41%",
+        "sharpe": 0.6,
+        "tracking_error": "0.00%",
+        "beta": 1.0,
+        "chart": 51
+      },
+      {
+        "id": 3,
+        "hip": "Overlaid Portfolio1 (Sector Fixed)",
+        "cagr": "22.71%",
+        "volatility": "23.06%",
+        "mdd": "-49.56%",
+        "sharpe": 1.02,
+        "tracking_error": "13.45%",
+        "beta": 1.03,
+        "chart": 39
+      },
+      {
+        "id": 4,
+        "hip": "Overlaid Portfolio2 (Asset Class Fixed)",
+        "cagr": "21.14%",
+        "volatility": "22.43%",
+        "mdd": "-47.89%",
+        "sharpe": 1.06,
+        "tracking_error": "11.65%",
+        "beta": 0.99,
+        "chart": 63
+      },
+      {
+        "id": 5,
+        "hip": "Overlaid Portfolio3 (Factor Fixed)",
+        "cagr": "22.81%",
+        "volatility": "23.59%",
+        "mdd": "-49.77%",
+        "sharpe": 1.03,
+        "tracking_error": "13.51%",
+        "beta": 1.04,
+        "chart": 56
+      },
+      {
+        "id": 6,
+        "hip": "Overlaid Portfolio4",
+        "cagr": "21.14%",
+        "volatility": "22.43%",
+        "mdd": "-47.89%",
+        "sharpe": 1.06,
+        "tracking_error": "11.65%",
+        "beta": 0.99,
+        "chart": 63
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "High Inflation",
+    "start_date": "2007-12-01",
+    "end_date": "2008-12-01",
+    "months": 13,
+    "tb_data": ""
+  },
+  {
+    "id": 3,
+    "name": "Low Inflation",
+    "start_date": "2009-02-01",
+    "end_date": "2009-12-01",
+    "months": 11,
+    "tb_data": ""
+  },
+  {
+    "id": 4,
+    "name": "High Inflation",
+    "start_date": "2011-06-01",
+    "end_date": "2012-01-01",
+    "months": 8,
+    "tb_data": ""
+  },
+  {
+    "id": 5,
+    "name": "Low Inflation",
+    "start_date": "2015-02-01",
+    "end_date": "2016-02-01",
+    "months": 13,
+    "tb_data": [
+      {
+        "id": 1,
+        "hip": "Original Portfolio",
+        "cagr": "3.69%",
+        "volatility": "22.15%",
+        "mdd": "-20.07%",
+        "sharpe": 0.17,
+        "tracking_error": "18.18%",
+        "beta": 0.8,
+        "chart": 19
+      },
+      {
+        "id": 2,
+        "hip": "Benchmark",
+        "cagr": "-2.43%",
+        "volatility": "14.99%",
+        "mdd": "-8.90%",
+        "sharpe": -0.16,
+        "tracking_error": "0.00%",
+        "beta": 1.0,
+        "chart": 55
+      },
+      {
+        "id": 3,
+        "hip": "Overlaid Portfolio1 (Sector Fixed)",
+        "cagr": "-8.53%",
+        "volatility": "18.81%",
+        "mdd": "-23.08%",
+        "sharpe": -0.45,
+        "tracking_error": "15.05%",
+        "beta": 0.74,
+        "chart": 71
+      },
+      {
+        "id": 4,
+        "hip": "Overlaid Portfolio2 (Asset Class Fixed)",
+        "cagr": "-4.35%",
+        "volatility": "17.53%",
+        "mdd": "-18.74%",
+        "sharpe": -0.25,
+        "tracking_error": "12.89%",
+        "beta": 0.78,
+        "chart": 57
+      },
+      {
+        "id": 5,
+        "hip": "Overlaid Portfolio3 (Factor Fixed)",
+        "cagr": "-5.71%",
+        "volatility": "19.27%",
+        "mdd": "-21.51%",
+        "sharpe": -0.3,
+        "tracking_error": "15.74%",
+        "beta": 0.73,
+        "chart": 66
+      },
+      {
+        "id": 6,
+        "hip": "Overlaid Portfolio4",
+        "cagr": "-4.35%",
+        "volatility": "17.53%",
+        "mdd": "-18.74%",
+        "sharpe": -0.25,
+        "tracking_error": "12.89%",
+        "beta": 0.78,
+        "chart": 57
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "High Inflation",
+    "start_date": "2021-06-01",
+    "end_date": "2022-05-01",
+    "months": 12,
+    "tb_data": [
+      {
+        "id": 1,
+        "hip": "Original Portfolio",
+        "cagr": "-20.33%",
+        "volatility": "31.85%",
+        "mdd": "-38.97%",
+        "sharpe": -0.64,
+        "tracking_error": "21.01%",
+        "beta": 1.43,
+        "chart": 19
+      },
+      {
+        "id": 2,
+        "hip": "Benchmark",
+        "cagr": "1.36%",
+        "volatility": "17.51%",
+        "mdd": "-13.47%",
+        "sharpe": 0.08,
+        "tracking_error": "0.00%",
+        "beta": 1.0,
+        "chart": 55
+      },
+      {
+        "id": 3,
+        "hip": "Overlaid Portfolio1 (Sector Fixed)",
+        "cagr": "-7.45%",
+        "volatility": "28.80%",
+        "mdd": "-31.00%",
+        "sharpe": -0.26,
+        "tracking_error": "18.58%",
+        "beta": 1.28,
+        "chart": 36
+      },
+      {
+        "id": 4,
+        "hip": "Overlaid Portfolio2 (Asset Class Fixed)",
+        "cagr": "9.17%",
+        "volatility": "25.30%",
+        "mdd": "-20.79%",
+        "sharpe": 0.36,
+        "tracking_error": "15.64%",
+        "beta": 1.14,
+        "chart": 67
+      },
+      {
+        "id": 5,
+        "hip": "Overlaid Portfolio3 (Factor Fixed)",
+        "cagr": "-0.95%",
+        "volatility": "30.84%",
+        "mdd": "-30.45%",
+        "sharpe": -0.03,
+        "tracking_error": "20.14%",
+        "beta": 1.38,
+        "chart": 49
+      },
+      {
+        "id": 6,
+        "hip": "Overlaid Portfolio4",
+        "cagr": "9.17%",
+        "volatility": "25.30%",
+        "mdd": "-20.79%",
+        "sharpe": 0.36,
+        "tracking_error": "15.64%",
+        "beta": 1.44,
+        "chart": 67
+      }
+    ]
+  }
+]

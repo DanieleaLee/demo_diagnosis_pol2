@@ -1,0 +1,31 @@
+{
+    "yAxisData": [
+        "Momentum",
+        "Value",
+        "Volatility",
+        "Growth",
+        "Profitability"
+    ],
+    "rowData": [
+        {
+            "name": "My Portfolio",
+            "data": [
+                2.5,
+                2.1,
+                1.9,
+                2.2,
+                2.3
+            ]
+        },
+        {
+            "name": "S&P 500",
+            "data": [
+                2.8,
+                2.4,
+                2.2,
+                2.5,
+                3.1
+            ]
+        }
+    ]
+}

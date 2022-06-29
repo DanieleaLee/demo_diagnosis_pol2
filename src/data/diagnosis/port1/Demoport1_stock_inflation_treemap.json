@@ -1,0 +1,1060 @@
+[
+    {
+        "value": [
+            57.61529094303411,
+            100,
+            null,
+            null
+        ],
+        "name": "ALL",
+        "id": "branch-1",
+        "discretion": null,
+        "children": [
+            {
+                "value": [
+                    5.36056153578091,
+                    7.84,
+                    36.700549358300464,
+                    68.35027467915023
+                ],
+                "name": "XOM - EXXON MOBIL CORP",
+                "id": "leaf-1",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    3.345877275772899,
+                    6.69,
+                    -0.0094442908334428,
+                    49.99527785458328
+                ],
+                "name": "INTC - INTEL CORP",
+                "id": "leaf-2",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    2.761446291087018,
+                    4.24,
+                    30.37237847216832,
+                    65.18618923608416
+                ],
+                "name": "CVS - CVS HEALTH CORP",
+                "id": "leaf-3",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    2.5851295152938967,
+                    4.91,
+                    5.245325669166292,
+                    52.622662834583146
+                ],
+                "name": "BRK.B - BERKSHIRE HATHAWAY",
+                "id": "leaf-4",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    2.4095826623150667,
+                    4.06,
+                    18.68114930808069,
+                    59.340574654040346
+                ],
+                "name": "RTX - RAYTHEON TECHNOLOGIES CORP",
+                "id": "leaf-5",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    2.002920762382156,
+                    3.06,
+                    30.98548716787849,
+                    65.49274358393924
+                ],
+                "name": "COP - CONOCOPHILLIPS",
+                "id": "leaf-6",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    1.604642115952708,
+                    2.53,
+                    26.695857108629298,
+                    63.34792855431465
+                ],
+                "name": "CI - CIGNA CORP",
+                "id": "leaf-7",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    1.5600777593263302,
+                    2.49,
+                    25.478095719196773,
+                    62.73904785959839
+                ],
+                "name": "TFC - TRUIST FINANCIAL CORP",
+                "id": "leaf-8",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    1.4658102,
+                    1.47,
+                    100.0,
+                    100.0
+                ],
+                "name": "COKE - COCA COLA CONSOLIDATED INC",
+                "id": "leaf-9",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    1.3142989635157722,
+                    2.18,
+                    20.449530458232545,
+                    60.22476522911627
+                ],
+                "name": "JCI - JOHNSON CONTROLS INTL PLC",
+                "id": "leaf-10",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    1.2315137091372774,
+                    2.15,
+                    14.520115760952107,
+                    57.260057880476054
+                ],
+                "name": "COF - CAPITAL ONE FINANCIAL CORP",
+                "id": "leaf-11",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    1.1871337164749542,
+                    2.13,
+                    11.31574990843076,
+                    55.65787495421538
+                ],
+                "name": "CNC - CENTENE CORP",
+                "id": "leaf-12",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    1.163635447370702,
+                    1.78,
+                    30.911725520663936,
+                    65.45586276033197
+                ],
+                "name": "EOG - EOG RESOURCES INC",
+                "id": "leaf-13",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    1.0115091325530765,
+                    1.42,
+                    42.60849268598119,
+                    71.3042463429906
+                ],
+                "name": "MPC - MARATHON PETROLEUM CORP",
+                "id": "leaf-14",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.9674048495717396,
+                    1.53,
+                    26.354473534818496,
+                    63.17723676740925
+                ],
+                "name": "WBA - WALGREENS BOOTS ALLIANCE INC",
+                "id": "leaf-15",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.9090761500742481,
+                    1.42,
+                    28.21805653706372,
+                    64.10902826853186
+                ],
+                "name": "RS - RELIANCE STEEL & ALUMINUM CO",
+                "id": "leaf-16",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.8483383591662453,
+                    1.32,
+                    28.21805653706372,
+                    64.10902826853186
+                ],
+                "name": "NUE - NUCOR CORP",
+                "id": "leaf-17",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.842128308618285,
+                    1.32,
+                    27.7635170301306,
+                    63.8817585150653
+                ],
+                "name": "ADM - ARCHER-DANIELS-MIDLAND CO",
+                "id": "leaf-18",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.8189693614479794,
+                    1.15,
+                    42.41846936640269,
+                    71.20923468320134
+                ],
+                "name": "PSX - PHILLIPS 66",
+                "id": "leaf-19",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.8096974663238943,
+                    1.18,
+                    37.43604779128094,
+                    68.71802389564047
+                ],
+                "name": "KR - KROGER CO",
+                "id": "leaf-20",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.7677119256028078,
+                    1.12,
+                    36.700549358300464,
+                    68.35027467915023
+                ],
+                "name": "VLO - VALERO ENERGY CORP",
+                "id": "leaf-21",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.7536592705951473,
+                    0.78,
+                    93.75853266066856,
+                    96.87926633033427
+                ],
+                "name": "USFD - US FOODS HOLDING CORP",
+                "id": "leaf-22",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.7395130448826688,
+                    1.13,
+                    30.67405771356394,
+                    65.33702885678197
+                ],
+                "name": "WCC - WESCO INTL INC",
+                "id": "leaf-23",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.7073888459167988,
+                    1.34,
+                    5.6995339400068445,
+                    52.84976697000342
+                ],
+                "name": "LEN - LENNAR CORP",
+                "id": "leaf-24",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.704794850100061,
+                    1.12,
+                    25.51340354217531,
+                    62.756701771087656
+                ],
+                "name": "TSN - TYSON FOODS INC  -CL A",
+                "id": "leaf-25",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.6063969041255416,
+                    1.19,
+                    2.045833205459857,
+                    51.02291660272993
+                ],
+                "name": "VMW - VMWARE INC -CL A",
+                "id": "leaf-26",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.5429134329044075,
+                    1.07,
+                    1.50199851619071,
+                    50.750999258095355
+                ],
+                "name": "CACI - CACI INTL INC  -CL A",
+                "id": "leaf-27",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.5300588914264702,
+                    0.93,
+                    14.578838002760447,
+                    57.289419001380224
+                ],
+                "name": "SNX - TD SYNNEX CORPORATION",
+                "id": "leaf-28",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.510350803764845,
+                    0.97,
+                    5.6995339400068445,
+                    52.84976697000342
+                ],
+                "name": "MDC - MDC HOLDINGS INC",
+                "id": "leaf-29",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.503284895083168,
+                    0.89,
+                    13.507158480340491,
+                    56.75357924017025
+                ],
+                "name": "TXT - TEXTRON INC",
+                "id": "leaf-30",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.5001050614121796,
+                    0.87,
+                    14.578838002760447,
+                    57.289419001380224
+                ],
+                "name": "AVT - AVNET INC",
+                "id": "leaf-31",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.4888710550040131,
+                    0.75,
+                    30.67405771356394,
+                    65.33702885678197
+                ],
+                "name": "BCC - BOISE CASCADE CO",
+                "id": "leaf-32",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.4861385286238095,
+                    0.92,
+                    5.6995339400068445,
+                    52.84976697000342
+                ],
+                "name": "PHM - PULTEGROUP INC",
+                "id": "leaf-33",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.4661148436843744,
+                    0.9,
+                    3.109305475397491,
+                    51.554652737698746
+                ],
+                "name": "XRX - XEROX HOLDINGS CORP",
+                "id": "leaf-34",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.46306296464960295,
+                    0.98,
+                    -5.263112364949919,
+                    47.36844381752504
+                ],
+                "name": "CCL - CARNIVAL CORPORATION & PLC",
+                "id": "leaf-35",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.4554360501960814,
+                    0.71,
+                    28.21805653706372,
+                    64.10902826853186
+                ],
+                "name": "CMC - COMMERCIAL METALS",
+                "id": "leaf-36",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.44249262887013313,
+                    0.72,
+                    22.81270164554641,
+                    61.406350822773206
+                ],
+                "name": "UNF - UNIFIRST CORP",
+                "id": "leaf-37",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.42705653685507766,
+                    0.56,
+                    52.92590963385456,
+                    76.46295481692728
+                ],
+                "name": "AYI - ACUITY BRANDS INC",
+                "id": "leaf-38",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.4108602012766473,
+                    0.69,
+                    19.30462716136006,
+                    59.65231358068003
+                ],
+                "name": "RRX - REGAL REXNORD CORPORATION",
+                "id": "leaf-39",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.4095987113958445,
+                    0.72,
+                    14.413447364228077,
+                    57.20672368211404
+                ],
+                "name": "DKS - DICKS SPORTING GOODS INC",
+                "id": "leaf-40",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.4084070247849804,
+                    0.7,
+                    17.395684427483232,
+                    58.697842213741616
+                ],
+                "name": "BWA - BORGWARNER INC",
+                "id": "leaf-41",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.4037903100528309,
+                    0.66,
+                    21.51943569233987,
+                    60.759717846169934
+                ],
+                "name": "XRAY - DENTSPLY SIRONA INC",
+                "id": "leaf-42",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.38496897668854435,
+                    0.65,
+                    18.128701830803152,
+                    59.064350915401576
+                ],
+                "name": "RCII - RENT-A-CENTER INC",
+                "id": "leaf-43",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.37852490998927896,
+                    0.67,
+                    13.283378199062156,
+                    56.64168909953108
+                ],
+                "name": "AAP - ADVANCE AUTO PARTS INC",
+                "id": "leaf-44",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.3744802797484852,
+                    0.83,
+                    -9.54804375001791,
+                    45.225978124991045
+                ],
+                "name": "HUBG - HUB GROUP INC  -CL A",
+                "id": "leaf-45",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.37170336335092286,
+                    0.59,
+                    25.51340354217531,
+                    62.756701771087656
+                ],
+                "name": "INGR - INGREDION INC",
+                "id": "leaf-46",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.36242172127433997,
+                    0.63,
+                    14.576729727303814,
+                    57.28836486365191
+                ],
+                "name": "ICL - ICL GROUP LTD",
+                "id": "leaf-47",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.32263498307228533,
+                    0.55,
+                    18.20224683466296,
+                    59.10112341733148
+                ],
+                "name": "MAN - MANPOWERGROUP",
+                "id": "leaf-48",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.3102479371613811,
+                    0.68,
+                    -8.72236434291402,
+                    45.63881782854299
+                ],
+                "name": "UNFI - UNITED NATURAL FOODS INC",
+                "id": "leaf-49",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.3101423854715791,
+                    0.51,
+                    22.347225125833205,
+                    61.1736125629166
+                ],
+                "name": "GEF - GREIF INC  -CL A",
+                "id": "leaf-50",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.29995465945849864,
+                    0.51,
+                    16.691422393044846,
+                    58.34571119652242
+                ],
+                "name": "VSH - VISHAY INTERTECHNOLOGY INC",
+                "id": "leaf-51",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.29894506727921477,
+                    0.46,
+                    30.67405771356394,
+                    65.33702885678197
+                ],
+                "name": "MSM - MSC INDUSTRIAL DIRECT  -CL A",
+                "id": "leaf-52",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2973488445649293,
+                    0.45,
+                    30.98548716787849,
+                    65.49274358393924
+                ],
+                "name": "PAA - PLAINS ALL AMER PIPELNE  -LP",
+                "id": "leaf-53",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2908358464220272,
+                    0.71,
+                    -17.86683233738134,
+                    41.06658383130933
+                ],
+                "name": "ARW - ARROW ELECTRONICS INC",
+                "id": "leaf-54",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2905247535953484,
+                    0.45,
+                    29.60825888721203,
+                    64.80412944360602
+                ],
+                "name": "BECN - BEACON ROOFING SUPPLY INC",
+                "id": "leaf-55",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2811893788422104,
+                    0.49,
+                    15.049100793983513,
+                    57.524550396991756
+                ],
+                "name": "GPI - GROUP 1 AUTOMOTIVE INC",
+                "id": "leaf-56",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2647601260217727,
+                    0.46,
+                    14.576729727303814,
+                    57.28836486365191
+                ],
+                "name": "HUN - HUNTSMAN CORP",
+                "id": "leaf-57",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.26422722965181095,
+                    0.46,
+                    14.576729727303814,
+                    57.28836486365191
+                ],
+                "name": "FUL - FULLER (H. B.) CO",
+                "id": "leaf-58",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2562854057208221,
+                    0.44,
+                    15.741755062329162,
+                    57.87087753116458
+                ],
+                "name": "NXST - NEXSTAR MEDIA GROUP",
+                "id": "leaf-59",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.25040161573135106,
+                    0.43,
+                    15.741755062329162,
+                    57.87087753116458
+                ],
+                "name": "TGNA - TEGNA INC",
+                "id": "leaf-60",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.24725196499179958,
+                    0.43,
+                    15.049100793983513,
+                    57.524550396991756
+                ],
+                "name": "PAG - PENSKE AUTOMOTIVE GROUP INC",
+                "id": "leaf-61",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.24597842840197295,
+                    0.4,
+                    22.81270164554641,
+                    61.406350822773206
+                ],
+                "name": "ABM - ABM INDUSTRIES INC",
+                "id": "leaf-62",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2413557955920868,
+                    0.46,
+                    5.6995339400068445,
+                    52.84976697000342
+                ],
+                "name": "TOL - TOLL BROTHERS INC",
+                "id": "leaf-63",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.22717397929543484,
+                    0.55,
+                    -16.971260507313687,
+                    41.51436974634316
+                ],
+                "name": "AMKR - AMKOR TECHNOLOGY INC",
+                "id": "leaf-64",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.22169562602407283,
+                    0.46,
+                    -3.7233666201098288,
+                    48.138316689945086
+                ],
+                "name": "AER - AERCAP HOLDINGS NV",
+                "id": "leaf-65",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.21945538641994927,
+                    0.45,
+                    -2.437453842334321,
+                    48.78127307883284
+                ],
+                "name": "H - HYATT HOTELS CORP",
+                "id": "leaf-66",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.21713432919575762,
+                    0.38,
+                    13.283378199062156,
+                    56.64168909953108
+                ],
+                "name": "FL - FOOT LOCKER INC",
+                "id": "leaf-67",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2100955119254622,
+                    0.34,
+                    23.66594174006713,
+                    61.83297087003356
+                ],
+                "name": "SAFM - SANDERSON FARMS INC",
+                "id": "leaf-68",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2024880249621168,
+                    0.42,
+                    -3.8105507007201567,
+                    48.09472464963992
+                ],
+                "name": "AN - AUTONATION INC",
+                "id": "leaf-69",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.20233954271091242,
+                    0.39,
+                    5.037433471381036,
+                    52.51871673569052
+                ],
+                "name": "UNVR - UNIVAR SOLUTIONS INC",
+                "id": "leaf-70",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.2003084283498568,
+                    0.32,
+                    23.461109907418404,
+                    61.7305549537092
+                ],
+                "name": "AL - AIR LEASE CORP",
+                "id": "leaf-71",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.19951341585789661,
+                    0.32,
+                    24.061619879551174,
+                    62.03080993977559
+                ],
+                "name": "DDS - DILLARDS INC  -CL A",
+                "id": "leaf-72",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.19418606588278722,
+                    0.63,
+                    -37.86934608624391,
+                    31.065326956878046
+                ],
+                "name": "MTH - MERITAGE HOMES CORP",
+                "id": "leaf-73",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.18978816279606456,
+                    0.5,
+                    -24.51312290906523,
+                    37.743438545467384
+                ],
+                "name": "WIRE - ENCORE WIRE CORP",
+                "id": "leaf-74",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.18479681438057885,
+                    0.29,
+                    25.34048834159321,
+                    62.67024417079661
+                ],
+                "name": "R - RYDER SYSTEM INC",
+                "id": "leaf-75",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.1811043743474116,
+                    0.41,
+                    -10.56982614502222,
+                    44.71508692748889
+                ],
+                "name": "SFM - SPROUTS FARMERS MARKET",
+                "id": "leaf-76",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.18105853084373358,
+                    0.4,
+                    -8.827122442233545,
+                    45.58643877888323
+                ],
+                "name": "SKX - SKECHERS U S A INC",
+                "id": "leaf-77",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.179842851361349,
+                    0.42,
+                    -14.68203319522722,
+                    42.65898340238639
+                ],
+                "name": "JAZZ - JAZZ PHARMACEUTICALS PLC",
+                "id": "leaf-78",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.1770541641698053,
+                    0.27,
+                    30.37237847216832,
+                    65.18618923608416
+                ],
+                "name": "PDCO - PATTERSON COS INC",
+                "id": "leaf-79",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.17546263418591393,
+                    0.32,
+                    8.855553706321444,
+                    54.42777685316072
+                ],
+                "name": "RL - RALPH LAUREN CORP",
+                "id": "leaf-80",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.17522101910347143,
+                    0.27,
+                    30.44732339869168,
+                    65.22366169934584
+                ],
+                "name": "MUR - MURPHY OIL CORP",
+                "id": "leaf-81",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.16718253335408303,
+                    0.3,
+                    13.283378199062156,
+                    56.64168909953108
+                ],
+                "name": "AEO - AMERN EAGLE OUTFITTERS INC",
+                "id": "leaf-82",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.16550000066766973,
+                    0.35,
+                    -5.353313410251786,
+                    47.32334329487411
+                ],
+                "name": "KLIC - KULICKE & SOFFA INDUSTRIES",
+                "id": "leaf-83",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.16412744813871985,
+                    0.4,
+                    -17.86683233738134,
+                    41.06658383130933
+                ],
+                "name": "NSIT - INSIGHT ENTERPRISES INC",
+                "id": "leaf-84",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.15483839016152942,
+                    0.27,
+                    15.464094694017277,
+                    57.73204734700864
+                ],
+                "name": "RDN - RADIAN GROUP INC",
+                "id": "leaf-85",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.14312617829491864,
+                    0.28,
+                    3.566027218135304,
+                    51.78301360906765
+                ],
+                "name": "OMI - OWENS & MINOR INC",
+                "id": "leaf-86",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.13415739131933072,
+                    0.32,
+                    -17.114526511955205,
+                    41.4427367440224
+                ],
+                "name": "PRG - PROG HOLDINGS INC",
+                "id": "leaf-87",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.13124906737674097,
+                    0.28,
+                    -6.10610309176667,
+                    46.946948454116665
+                ],
+                "name": "KEX - KIRBY CORP",
+                "id": "leaf-88",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.13072795357829634,
+                    0.27,
+                    -4.655107936004697,
+                    47.67244603199765
+                ],
+                "name": "WTM - WHITE MTNS INS GROUP LTD",
+                "id": "leaf-89",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.11598320589200506,
+                    0.37,
+                    -37.86934608624391,
+                    31.065326956878046
+                ],
+                "name": "TPH - TRI POINTE HOMES INC",
+                "id": "leaf-90",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.11286887112820998,
+                    0.24,
+                    -4.967294657621636,
+                    47.51635267118918
+                ],
+                "name": "URBN - URBAN OUTFITTERS INC",
+                "id": "leaf-91",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.1111045382875636,
+                    0.27,
+                    -17.250860944997086,
+                    41.37456952750146
+                ],
+                "name": "QRTEA - QURATE RETAIL INC",
+                "id": "leaf-92",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.10358500453454846,
+                    1.09,
+                    -81.06935703444213,
+                    9.465321482778933
+                ],
+                "name": "BIO - BIO-RAD LABORATORIES INC",
+                "id": "leaf-93",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.09020778047822767,
+                    0.38,
+                    -53.09273656447572,
+                    23.45363171776214
+                ],
+                "name": "TSEM - TOWER SEMICONDUCTOR LTD",
+                "id": "leaf-94",
+                "discretion": "discretionary"
+            },
+            {
+                "value": [
+                    0.07996968160638938,
+                    0.44,
+                    -63.71089598350154,
+                    18.14455200824923
+                ],
+                "name": "ONTO - ONTO INNOVATION INC",
+                "id": "leaf-95",
+                "discretion": "discretionary"
+            }
+        ]
+    }
+]

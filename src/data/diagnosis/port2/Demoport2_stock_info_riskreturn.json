@@ -1,0 +1,412 @@
+{
+    "data": {
+        "getMPTPortfolio": {
+            "return_statistics": {
+                "volatility": [
+                    {
+                        "key": "TSLA",
+                        "value": 57.39
+                    },
+                    {
+                        "key": "NFLX",
+                        "value": 56.86
+                    },
+                    {
+                        "key": "MRK",
+                        "value": 23.77
+                    },
+                    {
+                        "key": "ADSK",
+                        "value": 39.81
+                    },
+                    {
+                        "key": "FTNT",
+                        "value": 47.05
+                    },
+                    {
+                        "key": "DXCM",
+                        "value": 44.62
+                    },
+                    {
+                        "key": "TEAM",
+                        "value": 61.15
+                    },
+                    {
+                        "key": "SPOT",
+                        "value": 55.17
+                    },
+                    {
+                        "key": "MDB",
+                        "value": 75.75
+                    },
+                    {
+                        "key": "EPAM",
+                        "value": 79.55
+                    },
+                    {
+                        "key": "IT",
+                        "value": 33.53
+                    },
+                    {
+                        "key": "HZNP",
+                        "value": 30.37
+                    },
+                    {
+                        "key": "ZG",
+                        "value": 62.82
+                    },
+                    {
+                        "key": "PAYC",
+                        "value": 44.8
+                    },
+                    {
+                        "key": "BHVN",
+                        "value": 87.17
+                    },
+                    {
+                        "key": "TNDM",
+                        "value": 45.78
+                    },
+                    {
+                        "key": "CAE",
+                        "value": 41.49
+                    },
+                    {
+                        "key": "HUBS",
+                        "value": 61.92
+                    },
+                    {
+                        "key": "CRL",
+                        "value": 35.75
+                    },
+                    {
+                        "key": "APO",
+                        "value": 36.59
+                    },
+                    {
+                        "key": "GLOB",
+                        "value": 50.88
+                    },
+                    {
+                        "key": "CCJ",
+                        "value": 56.72
+                    },
+                    {
+                        "key": "NTLA",
+                        "value": 93.1
+                    },
+                    {
+                        "key": "SPLK",
+                        "value": 52.63
+                    },
+                    {
+                        "key": "PWR",
+                        "value": 36.07
+                    },
+                    {
+                        "key": "MRTX",
+                        "value": 56.14
+                    },
+                    {
+                        "key": "AMBA",
+                        "value": 75.29
+                    },
+                    {
+                        "key": "MEDP",
+                        "value": 44.23
+                    },
+                    {
+                        "key": "VMW",
+                        "value": 30.12
+                    },
+                    {
+                        "key": "GNRC",
+                        "value": 49.84
+                    },
+                    {
+                        "key": "ARES",
+                        "value": 37.65
+                    },
+                    {
+                        "key": "AVLR",
+                        "value": 53.63
+                    },
+                    {
+                        "key": "NTRA",
+                        "value": 74.7
+                    },
+                    {
+                        "key": "TDOC",
+                        "value": 72.71
+                    },
+                    {
+                        "key": "CLF",
+                        "value": 59.59
+                    },
+                    {
+                        "key": "NBIX",
+                        "value": 32.89
+                    },
+                    {
+                        "key": "ENPH",
+                        "value": 68.59
+                    },
+                    {
+                        "key": "MANH",
+                        "value": 34.42
+                    },
+                    {
+                        "key": "PCTY",
+                        "value": 46.42
+                    },
+                    {
+                        "key": "DAR",
+                        "value": 39.37
+                    },
+                    {
+                        "key": "NYT",
+                        "value": 33.67
+                    },
+                    {
+                        "key": "SEDG",
+                        "value": 61.23
+                    },
+                    {
+                        "key": "WOLF",
+                        "value": 66.41
+                    },
+                    {
+                        "key": "SAIA",
+                        "value": 49.34
+                    },
+                    {
+                        "key": "KRNT",
+                        "value": 66.96
+                    },
+                    {
+                        "key": "AZTA",
+                        "value": 43.16
+                    },
+                    {
+                        "key": "FSLR",
+                        "value": 43.38
+                    },
+                    {
+                        "key": "CROX",
+                        "value": 55.61
+                    },
+                    {
+                        "key": "PLUG",
+                        "value": 76.25
+                    },
+                    {
+                        "key": "ESTC",
+                        "value": 63.1
+                    }
+                ],
+                "return": [
+                    {
+                        "key": "TSLA",
+                        "value": 25.97
+                    },
+                    {
+                        "key": "NFLX",
+                        "value": -63.67
+                    },
+                    {
+                        "key": "MRK",
+                        "value": 16.05
+                    },
+                    {
+                        "key": "ADSK",
+                        "value": -31.39
+                    },
+                    {
+                        "key": "FTNT",
+                        "value": 30.34
+                    },
+                    {
+                        "key": "DXCM",
+                        "value": -7.16
+                    },
+                    {
+                        "key": "TEAM",
+                        "value": -24.84
+                    },
+                    {
+                        "key": "SPOT",
+                        "value": -52.61
+                    },
+                    {
+                        "key": "MDB",
+                        "value": -15.78
+                    },
+                    {
+                        "key": "EPAM",
+                        "value": -30.64
+                    },
+                    {
+                        "key": "IT",
+                        "value": 5.67
+                    },
+                    {
+                        "key": "HZNP",
+                        "value": -3.79
+                    },
+                    {
+                        "key": "ZG",
+                        "value": -63.18
+                    },
+                    {
+                        "key": "PAYC",
+                        "value": -15.94
+                    },
+                    {
+                        "key": "BHVN",
+                        "value": 95.52
+                    },
+                    {
+                        "key": "TNDM",
+                        "value": -12.51
+                    },
+                    {
+                        "key": "CAE",
+                        "value": -21.54
+                    },
+                    {
+                        "key": "HUBS",
+                        "value": -35.71
+                    },
+                    {
+                        "key": "CRL",
+                        "value": -29.46
+                    },
+                    {
+                        "key": "APO",
+                        "value": -4.65
+                    },
+                    {
+                        "key": "GLOB",
+                        "value": -17.34
+                    },
+                    {
+                        "key": "CCJ",
+                        "value": 18.86
+                    },
+                    {
+                        "key": "NTLA",
+                        "value": -27.2
+                    },
+                    {
+                        "key": "SPLK",
+                        "value": -15.15
+                    },
+                    {
+                        "key": "PWR",
+                        "value": 21.2
+                    },
+                    {
+                        "key": "MRTX",
+                        "value": -61.54
+                    },
+                    {
+                        "key": "AMBA",
+                        "value": -17.77
+                    },
+                    {
+                        "key": "MEDP",
+                        "value": -19.85
+                    },
+                    {
+                        "key": "VMW",
+                        "value": -41.44
+                    },
+                    {
+                        "key": "GNRC",
+                        "value": -30.43
+                    },
+                    {
+                        "key": "ARES",
+                        "value": 30.47
+                    },
+                    {
+                        "key": "AVLR",
+                        "value": -38.79
+                    },
+                    {
+                        "key": "NTRA",
+                        "value": -58.58
+                    },
+                    {
+                        "key": "TDOC",
+                        "value": -77.45
+                    },
+                    {
+                        "key": "CLF",
+                        "value": 11.25
+                    },
+                    {
+                        "key": "NBIX",
+                        "value": -8.01
+                    },
+                    {
+                        "key": "ENPH",
+                        "value": 19.51
+                    },
+                    {
+                        "key": "MANH",
+                        "value": -13.28
+                    },
+                    {
+                        "key": "PCTY",
+                        "value": -1.75
+                    },
+                    {
+                        "key": "DAR",
+                        "value": 15.8
+                    },
+                    {
+                        "key": "NYT",
+                        "value": -20.42
+                    },
+                    {
+                        "key": "SEDG",
+                        "value": 2.27
+                    },
+                    {
+                        "key": "WOLF",
+                        "value": -22.66
+                    },
+                    {
+                        "key": "SAIA",
+                        "value": -20.26
+                    },
+                    {
+                        "key": "KRNT",
+                        "value": -56.03
+                    },
+                    {
+                        "key": "AZTA",
+                        "value": -24.52
+                    },
+                    {
+                        "key": "FSLR",
+                        "value": -11.96
+                    },
+                    {
+                        "key": "CROX",
+                        "value": -44.07
+                    },
+                    {
+                        "key": "PLUG",
+                        "value": -42.19
+                    },
+                    {
+                        "key": "ESTC",
+                        "value": -47.81
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "My Portfolio",
+        "scores": {
+            "Inflation": 58
+        }
+    },
+    {
+        "name": "S&P 500",
+        "scores": {
+            "Inflation": 51
+        }
+    }
+]

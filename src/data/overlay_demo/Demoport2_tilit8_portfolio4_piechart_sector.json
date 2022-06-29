@@ -1,0 +1,46 @@
+[
+  {
+    "value": 4.23,
+    "name": "Communication Services"
+  },
+  {
+    "value": 3.86,
+    "name": "Consumer Discretionary"
+  },
+  {
+    "value": 3.34,
+    "name": "Consumer Staples"
+  },
+  {
+    "value": 14.31,
+    "name": "Energy"
+  },
+  {
+    "value": 4.08,
+    "name": "Financials"
+  },
+  {
+    "value": 22.03,
+    "name": "Health Care"
+  },
+  {
+    "value": 8.92,
+    "name": "Industrials"
+  },
+  {
+    "value": 20.81,
+    "name": "Information Technology"
+  },
+  {
+    "value": 1.6,
+    "name": "Materials"
+  },
+  {
+    "value": 3.48,
+    "name": "Real Estate"
+  },
+  {
+    "value": 13.34,
+    "name": "Utilities"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "ts":{
+    "path": "tsconfig.json"
+  }
+  "plugins": ["jsdom-quokka-plugin"]
+}
