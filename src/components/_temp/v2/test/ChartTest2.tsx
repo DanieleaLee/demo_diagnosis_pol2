@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { css } from "@emotion/react";
-import HeatmapChart from "../customCharts/HeatmapChart";
-import * as heatmapChartData from "../customCharts/HeatmapChart/getHeatmapData";
-import EfScatterChart from "../customCharts/EfScatterChart";
-import * as graphQlData from "../customCharts/EfScatterChart/getEfScatterData";
-import RiskReturnScatterChart from "../customCharts/RiskReturnScatterChart";
+import HeatmapChart from "@components/customCharts/HeatmapChart";
+import * as heatmapChartData from "@components/customCharts/HeatmapChart/getHeatmapData";
+import EfScatterChart from "@components/customCharts/EfScatterChart";
+import * as graphQlData from "@components/customCharts/EfScatterChart/getEfScatterData";
+import RiskReturnScatterChart from "@components/customCharts/RiskReturnScatterChart";
 
 // HEATMAP
 const heatmapColorSet = [

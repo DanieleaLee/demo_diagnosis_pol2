@@ -14,7 +14,7 @@ import PfOverlayHoldingsTable from "@lucian2Components/molecules/PfOverlayHoldin
 import PfOverlayLayerConfig from "@lucian2Components/molecules/PfOverlayLayerConfig";
 import { PFOVERLAY_HOLDINGS_DUMMY_DATA } from "@lucian2Components/Dummy";
 import BasicBox from "@components/atoms/BasicBox";
-import SingleScoreChart from "../../../customCharts/SingleScoreChart";
+import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 
 const dotStyle = css`
   width: 3.2px;

@@ -13,7 +13,7 @@ import { getMPTPortfolio } from './getMPTPortfolio';
 import { ClipLoader } from 'react-spinners';
 import { useSelectedModelValue } from '@recoil/hooks/useSelectedModel';
 import HelpTooltip from '@components/molecules/HelpTooltip';
-import EfScatterChart from "@components/_temp/v2/customCharts/EfScatterChart";
+import EfScatterChart from "@components/customCharts/EfScatterChart";
 import { useMPTdata, useMPTdataValue } from "@recoil/hooks/useMPTdata";
 import { useModelConfig, useModelConfigValue} from "@recoil/hooks/useModelConfig";
 

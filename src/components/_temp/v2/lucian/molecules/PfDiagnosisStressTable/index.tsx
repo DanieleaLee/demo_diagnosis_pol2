@@ -7,9 +7,9 @@ import * as Typography from "@styles/typography";
 import { flexRow } from "@styles";
 import TblHeaderPrimary from "@components/molecules/TblHeaderPrimary";
 import { PFDGSTRESS_DUMMY_DATA } from "@lucian2Components/Dummy";
-import MDDLineChart from "@tempComponents/v2/customCharts/MDDLineChart";
-import { getMddData } from "@tempComponents/v2/customCharts/MDDLineChart/getNegativeData";
-import LineChartHnTDot from "@tempComponents/v2/customCharts/LineChartHnTDot";
+import MDDLineChart from "@components/customCharts/MDDLineChart";
+import { getMddData } from "@components/customCharts/MDDLineChart/getNegativeData";
+import LineChartHnTDot from "@components/customCharts/LineChartHnTDot";
 
 const PfDgStressTbContainerCss = css`
   display: block;

@@ -1,20 +1,18 @@
 import { css } from "@emotion/react";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import * as TextButton from "@components/atoms/TextButton";
-import { useModal } from "@components/organisms/PopupModals";
 import Colors from "@styles/colors";
-import ComparisonAnalysis from "@pages/diagnosis/_temp/thWorkingDirectory/ComparisonAnalysis";
+import ComparisonAnalysis from "@components/thWorkingDirectory/ComparisonAnaylsis";
 import * as Typography from "@styles/typography";
 import PfOverlayChartPerformance from "@lucian2Components/organisms/PfOverlayChartPerformance";
 import PfOverlayFilterBox from "@lucian2Components/organisms/PfOverlayFilterBox/index";
 import { ContentsType } from "@lucian2Components/organisms/PfOverlayFilterBox/index";
 import { PFOVERLAY_DUMMAY_DATA } from "@lucian2Components/Dummy";
-import { BODY_BUTTONS_HEIGHT } from "@pages/diagnosis/_temp/config/constants";
-import diagnosisData from "@pages/diagnosis/_temp/data/diagnosis";
-
-import linechartData from "@pages/diagnosis/_temp/data/Demoport2_tilit8_line_chart.json";
-import tableData from "@pages/diagnosis/_temp/data/overlay_demo/Demoport2_tilit8_performance_table.json";
+import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
+import diagnosisData from "../../../data/diagnosis";
+import linechartData from "../../../data/Demoport2_tilit8_line_chart.json";
+import tableData from "../../../data/overlay_demo/Demoport2_tilit8_performance_table.json";
 import { useRouter } from "next/router";
 
 const UniverseInfo = {
@@ -180,7 +178,6 @@ const OverlayConfigTemplate = ({ portfolioName }) => {
           </div>
 
           <div css={[bodyItem]}>
-            {/* <div css={PfOverlayTemplateCss}> */}
             <PfOverlayFilterBox
               data={data}
               contents={contents}
@@ -200,7 +197,6 @@ const OverlayConfigTemplate = ({ portfolioName }) => {
               contents={contents} 
               showChart={showChart} 
             />
-            {/* </div> */}
           </div>
         </div>
       </div>

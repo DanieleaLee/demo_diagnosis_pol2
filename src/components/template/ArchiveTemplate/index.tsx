@@ -4,7 +4,7 @@ import { MdError } from "react-icons/md";
 import Colors from "@styles/colors";
 import { fakeType } from "./customComponents/Table";
 import Table from "./customComponents/Table";
-import { BODY_BUTTONS_HEIGHT } from "@pages/diagnosis/_temp/config/constants";
+import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
 import SearchBar from '@components/molecules/SearchBar';
 import * as TextButton from "@components/atoms/TextButton";
 import portfolioList from "../../../data/portfolio_list/Portfolio_table.json"

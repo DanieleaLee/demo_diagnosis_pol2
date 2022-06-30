@@ -12,8 +12,8 @@ import PfResultCard from "@lucian2Components/molecules/PfResultCard";
 import PfDateBar from "@lucian2Components/molecules/PfDateBar";
 import { Big } from "@lucian2Components/atoms/Button/TextButtonBig";
 import PfGraphTag from "@lucian2Components/molecules/PfGraphTag";
-import PCLineChart from "../../../customCharts/PCLineChart/index";
-import { getData } from "../../../customCharts/PHLineChart/getData";
+import PCLineChart from "@components/customCharts/PCLineChart/index";
+import { getData } from "@components/customCharts/PHLineChart/getData";
 
 const PfComparisonUpperCss = css`
   ${flexRow}

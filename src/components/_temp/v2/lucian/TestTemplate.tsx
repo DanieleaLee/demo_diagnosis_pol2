@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import PfTemplate from "./templates/PfTemplate";
-import { getData } from "../customCharts/PHLineChart/getData";
+import { getData } from "@components/customCharts/PHLineChart/getData";
 import MRTemplate from "./templates/MRTemplate";
 import { css } from "@emotion/react";
 import * as TextButton from "@components/atoms/TextButton";
 import PfOverlayTemplate from "./templates/PfOverlayTemplate";
-import PfDgSidebar from "./organisms/PfDgSidebar/index";
-import PfOverlayHoldingsTable from "./molecules/PfOverlayHoldingsTable";
 import PfOverlayResultTemplate from "./templates/PfOverlayResultTemplate/index";
 
 const slcData = getData();

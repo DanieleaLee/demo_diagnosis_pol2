@@ -16,10 +16,10 @@ import AssetClassPieChart from "@components/organisms/AssetClassPieChart";
 import RegionPieChart from "@components/organisms/RegionPieChart";
 import { useSelectedModelValue } from "@recoil/hooks/useSelectedModel";
 
-import HeatmapChart from "@components/_temp/v2/customCharts/HeatmapChart";
-import * as heatmapChartData from "@components/_temp/v2/customCharts/HeatmapChart/getHeatmapData";
-import RiskReturnScatterChart from "@components/_temp/v2/customCharts/RiskReturnScatterChart";
-import * as graphQlData from "@components/_temp/v2/customCharts/EfScatterChart/getEfScatterData";
+import HeatmapChart from "@components/customCharts/HeatmapChart";
+import * as heatmapChartData from "@components/customCharts/HeatmapChart/getHeatmapData";
+import RiskReturnScatterChart from "@components/customCharts/RiskReturnScatterChart";
+import * as graphQlData from "@components/customCharts/EfScatterChart/getEfScatterData";
 import { useMPTdata, useMPTdataValue } from "@recoil/hooks/useMPTdata";
 import { useModelConfigValue } from "@recoil/hooks/useModelConfig";
 

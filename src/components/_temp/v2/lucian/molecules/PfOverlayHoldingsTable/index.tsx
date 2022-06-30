@@ -5,7 +5,7 @@ import { useTable, useSortBy, useGlobalFilter } from "react-table";
 import Colors from "@styles/colors";
 import { flexRow } from "@styles";
 import * as Typography from "@styles/typography";
-import SingleScoreChart from "../../../customCharts/SingleScoreChart";
+import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 import { PFOVERLAY_HOLDINGS_DUMMY_DATA } from "@lucian2Components/Dummy";
 import RangeSetBox from "@lucian2Components/organisms/RangeBox";
 import TbHeaderSort from "@lucian2Components/molecules/TbHeaderSort";

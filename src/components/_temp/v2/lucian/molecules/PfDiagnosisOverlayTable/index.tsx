@@ -1,13 +1,10 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { useMemo } from "react";
-import { useTable, useSortBy, useGlobalFilter } from "react-table";
+import { useTable } from "react-table";
 import Colors from "@styles/colors";
 import * as Typography from "@styles/typography";
-import { flexRow } from "@styles";
-import MDDLineChart from "../../../customCharts/MDDLineChart";
-import { getMddData } from "../../../customCharts/MDDLineChart/getNegativeData";
-import LineChartHnTDot from "@tempComponents/v2/customCharts/LineChartHnTDot";
+import { getMddData } from "@components/customCharts/MDDLineChart/getNegativeData";
 import { PFDGOVERLAY_DUMMY_DATA } from "../../Dummy";
 
 const PfDgOverlayTbContainerCss = css``;

@@ -1,43 +1,16 @@
-import RightMenu from "@alvinComponents/molecules/RightMenu";
-import AAPipelineNav, { NAV_WIDTH } from "@components/organisms/AAPipelineNav";
 import { css } from "@emotion/react";
-import { useState, useMemo, useEffect } from "react";
-import TechTree, { TECHTREE_HEIGHT } from "@components/molecules/TechTree";
-import { useTable, useSortBy } from "react-table";
-import React from "react";
-import TblIndexList, { useTblIndexListColumns } from "@components/organisms/TblIndexList";
-import { useLoadingCallback } from "src/lib/hooks/useLoadingCallback";
-import { reqListAAIndexByCodes } from "src/api/mp";
-import Drawers, { useDrawer } from "@components/organisms/Drawers";
-import * as TextButton from "@components/atoms/TextButton";
-import ConfirmDeleteIndexSet from "@components/organisms/PopupModals/ConfirmDeleteIndexSet";
-import { useModal } from "@components/organisms/PopupModals";
-import AddIU from "@components/organisms/PopupModals/AddIU";
-import { flexRow } from "@styles";
-
-import ModelSelectionTemplate from "@components/template/ModelSelectionTemplate";
-import ModelConfigTemplate from "@components/template/ModelConfigTemplate";
-import { modelData } from "@components/template/ModelSelectionTemplate/mockData";
-
-import BasicBox from "@components/atoms/BasicBox";
+import React, { useState, useEffect } from "react";
 import Colors from "@styles/colors";
-import DiagnosisSummary from "@pages/diagnosis/_temp/thWorkingDirectory/DiagnosisSummary";
-import ComparisonAnalysis from "@tempComponents/v2/thWorkingDirectory/ComparisonAnalysis";
-import SectorAllocation from "@tempComponents/v2/thWorkingDirectory/DiagnosisSummary/SectorAllocation";
-// import ComparisonAnalysis from "@tempComponents/v2/thWorkingDirectory/ComparisonAnalysis";
-
 import * as Typography from "@styles/typography";
-import PfDgSidebar from "@lucian2Components/organisms/PfDgSidebar";
-import { PFDGSIDEBAR_DUMMY_DATA } from "@lucian2Components/Dummy";
-import PfOverlayHighInflation from "@lucian2Components/organisms/PfOverlayHighInflation";
-
-import { BODY_BUTTONS_HEIGHT } from "@pages/diagnosis/_temp/config/constants";
-import { HiServer } from "react-icons/hi";
-import { TinyBg } from "@lucian2Components/atoms/Button/TextButtonTinyWithBg";
-import NewTechTemplate from "@lucian2Components/templates/NewTechTemplate";
-
-import diagnosisData from "@pages/diagnosis/_temp/data/diagnosis";
-import _layerCandidatesData from "@pages/diagnosis/_temp/data/overlay_demo/Demoport2_Layer_candidates.json"
+import { flexRow } from "@styles";
+import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
+import * as TextButton from "@components/atoms/TextButton";
+import DiagnosisSummary from "@components/thWorkingDirectory/DiganosisSummary";
+import OverlayConfigSidebar from "./customComponents/OverlayConfigSidebar";
+import OverlayInflationLayer from "./customComponents/OverlayInflationLayer";
+import NewTechLayer from "./customComponents/NewTechLayer";
+import diagnosisData from "src/data/diagnosis";
+import _layerCandidatesData from "src/data/overlay_demo/Demoport2_Layer_candidates.json";
 import { useRouter } from "next/router";
 
 // 알맹이 wrap 그린
@@ -134,6 +107,20 @@ const boxTitleStyle = css`
   top: 43px;
 `;
 
+export const flexRowStyle = css`
+  ${flexRow}
+`;
+
+export type SidebarDataType = {
+  id: number;
+  title: string;
+  lists: Array<{
+    id: number;
+    name: string;
+    value: number;
+  }> | string ;
+};
+
 
 
 const OverlayConfigTemplate = ({
@@ -153,12 +140,10 @@ const OverlayConfigTemplate = ({
 
   const [layerCandidatesData, setLayerCandidatesData] = useState([]);
   const [clickedLayer, setClickedLayer] = useState("2");
-  // const [skipCount, setSkipCount] = useState(true);
-
 
   const layerImplementationList = [
-    {id:2, component:<PfOverlayHighInflation data={layerCandidatesData}/>},
-    {id:12, component:<NewTechTemplate/>}
+    {id:2, component:<OverlayInflationLayer data={layerCandidatesData}/>},
+    {id:12, component:<NewTechLayer/>}
  ]
 
   const onClickLayerHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -170,14 +155,6 @@ const OverlayConfigTemplate = ({
     setSelectedPortfolioName('portfolio2')
     setLayerCandidatesData(_layerCandidatesData);
   }, []);
-
-  // useEffect(() => {
-  //   if (skipCount) setSkipCount(false);
-  //   if (!skipCount) {
-  //     console.log("가즈아! dataOverlayResult로 : ", portfolioName);
-  //     setStep((prev) => prev + 1);
-  //   }
-  // }, [dataOverlayResult]);
 
   const runHandler = async () => {
     // dataOverlayConfig를 parameter로 보내서 result 받아서 DataOverlayResult 변경
@@ -216,7 +193,7 @@ const OverlayConfigTemplate = ({
             <Typography.Subtitle4 css={boxTitleStyle} lineHeight={1}>
               Layer Candidates
             </Typography.Subtitle4>
-            <PfDgSidebar data={layerCandidatesData} clickedLayer={clickedLayer} onClickLayerHandler={onClickLayerHandler} />
+            <OverlayConfigSidebar data={layerCandidatesData} clickedLayer={clickedLayer} onClickLayerHandler={onClickLayerHandler} />
           </div>
           <div css={[bodyItem]} >
             <Typography.Subtitle4 css={boxTitleStyle} lineHeight={1}>Layer Implementation</Typography.Subtitle4>

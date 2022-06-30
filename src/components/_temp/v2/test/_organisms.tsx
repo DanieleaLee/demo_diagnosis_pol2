@@ -8,8 +8,8 @@ import { modelData } from "@tempComponents/v2/organisms/ModelSelection/mockData"
 import SearchFilter from "@tempComponents/v2/organisms/SearchFilter";
 import fakeData from "@tempComponents/v2/organisms/SearchFilter/db.json";
 import SelectPeriodBox from "../organisms/SelectPeriodBox";
-import DiagnosisSummary from "@tempComponents/v2/thWorkingDirectory/DiagnosisSummary";
-import ComparisonAnalysis from "@tempComponents/v2/thWorkingDirectory/ComparisonAnalysis";
+import DiagnosisSummary from "@components/thWorkingDirectory/DiganosisSummary";
+import ComparisonAnalysis from "@components/thWorkingDirectory/ComparisonAnaylsis";
 
 const DATA = [
   { id: "snp500", title: "S&P 500" },

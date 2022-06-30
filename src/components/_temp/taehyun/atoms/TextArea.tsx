@@ -3,7 +3,6 @@ import { css, Theme, useTheme } from "@emotion/react";
 import { SerializedStyles } from "@emotion/serialize";
 import React, { FocusEvent, useImperativeHandle, useMemo, useRef, useState } from "react";
 import { CgClose } from "react-icons/cg";
-import { BsExclamationCircleFill } from "react-icons/bs";
 import { FONT_SIZE } from "src/config/constants";
 
 const inputContainer = css`

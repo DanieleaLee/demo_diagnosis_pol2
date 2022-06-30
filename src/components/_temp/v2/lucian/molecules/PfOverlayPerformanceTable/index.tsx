@@ -6,9 +6,8 @@ import Colors from "@styles/colors";
 import { flexRow } from "@styles";
 import * as Typography from "@styles/typography";
 import { TableDataType } from "@lucian2Components/organisms/PfOverlayChartPerformance";
-import { ContentsType } from "@lucian2Components/organisms/PfOverlayFilterBox/index";
-import { DataType } from "@lucian2Components/organisms/PfOverlayChartPerformance/index";
-import SingleScoreChart from "../../../customCharts/SingleScoreChart/index";
+import { ContentsType } from "@lucian2Components/organisms/PfOverlayFilterBox";
+import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 
 const PfOLPerformanceTbContainerCss = css`
   display: block;
@@ -170,22 +169,6 @@ const PfOverlayPerformanceTable = ({
         },
         width:100,
       },
-      // {
-      //   accessor: "VaR",
-      //   Header: ({ column }) => (
-      //     <Typography.Body4 color={Colors.buttonSubmit}>
-      //       VaR(5%)
-      //     </Typography.Body4>
-      //   ),
-      //   Cell: ({ row }) => {
-      //     return (
-      //       <Typography.Body3 color={Colors.buttonSubmit}>
-      //         {row.original.var}
-      //       </Typography.Body3>
-      //     );
-      //   },
-      //   width:62,
-      // },
       {
         accessor: "Market beta",
         Header: ({ column }) => (

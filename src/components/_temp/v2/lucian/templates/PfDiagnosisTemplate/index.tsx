@@ -4,7 +4,7 @@ import Colors from "@styles/colors";
 import * as Typography from "@styles/typography";
 import { flexRowBetween, flexRow } from "@styles";
 import * as TextButton from "@components/atoms/TextButton";
-import StackedBarChart from "@tempComponents/v2/customCharts/StackedBarChart";
+import StackedBarChart from "@components/customCharts/StackedBarChart";
 import { STACKED_BAR_DATA } from "@tempComponents/v2/test/ChartTest";
 import PfDiagnosisThemeTable from "@lucian2Components/molecules/PfDiagnosisThemeTable/index";
 import PfDiagnosisThemeBar from "@lucian2Components/atoms/PfDiagnosisThemeBar";

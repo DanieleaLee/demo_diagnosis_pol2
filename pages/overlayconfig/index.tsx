@@ -3,8 +3,8 @@ import { GetServerSideProps } from "next";
 import { common } from "src/config/ssr";
 import { css } from "@emotion/react";
 import Colors from "@styles/colors";
-import BodyContainer from "@pages/diagnosis/_temp/containers/BodyContainer";
-import { BODY_BUTTONS_HEIGHT } from "@pages/diagnosis/_temp/config/constants";
+import BodyContainer from "@components/containers/BodyContainer";
+import {BODY_BUTTONS_HEIGHT} from "src/config/constants";
 import DiagnosisFullTemplate from "@components/template/DiagnosisFullTemplate";
 
 export const bodyHeadWrap = css`

@@ -9,7 +9,7 @@ import * as Typography from "@styles/typography";
 import TbHeaderSort from '@lucian2Components/molecules/TbHeaderSort';
 import { NewTechDataType } from '@lucian2Components/templates/NewTechTemplate/index';
 import NewTechRangeBar from '@lucian2Components/organisms/NewTechRangeBar/index';
-import SingleScoreChart from "../../../customCharts/SingleScoreChart";
+import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 
 
 const TbContainerCss = css`

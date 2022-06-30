@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { css } from "@emotion/react";
-import LineChartHnTDot from "./../customCharts/LineChartHnTDot";
-import StackedBarChart from "./../customCharts/StackedBarChart";
-import MDDLineChart from "../customCharts/MDDLineChart";
-import { getMddData } from "../customCharts/MDDLineChart/getNegativeData";
-import PHLineChart from "../customCharts/PHLineChart";
-import { getData } from "../customCharts/PHLineChart/getData";
-import HoldingHistoricalChart from "../customCharts/HoldingHistoricalChart";
+import LineChartHnTDot from "@components/customCharts/LineChartHnTDot";
+import StackedBarChart from "@components/customCharts/StackedBarChart";
+import MDDLineChart from "@components/customCharts/MDDLineChart";
+import { getMddData } from "@components/customCharts/MDDLineChart/getNegativeData";
+import PHLineChart from "@components/customCharts/PHLineChart";
+import { getData } from "@components/customCharts/PHLineChart/getData";
+import HoldingHistoricalChart from "@components/customCharts/HoldingHistoricalChart";
 import {
   holdingData,
   holidngDate,
-} from "../customCharts/HoldingHistoricalChart/getHoldingData";
-import PWStackedBarChart from "../customCharts/PWStackedBarChart";
+} from "@components/customCharts/HoldingHistoricalChart/getHoldingData";
+import PWStackedBarChart from "@components/customCharts/PWStackedBarChart";
 import {
   labels,
   pwChartData,
   getDateArr,
-} from "../customCharts/PWStackedBarChart/getPWDate";
+} from "@components/customCharts/PWStackedBarChart/getPWDate";
 
 const DATA = [
   1, 2.8, 3, 4.8, 3.8, 3.2, 4.4, 2.2, 3.1, 3.8, 1.2, 1.3, 3.1, 4.2, 5, 4.3, 5.5,

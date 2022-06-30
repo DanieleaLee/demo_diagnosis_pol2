@@ -14,7 +14,7 @@ import PortfolioTag from '@lucian2Components/atoms/PortfolioTag';
 import NewTechSearchbar from '@lucian2Components/molecules/NewTechSearchbar/index';
 import PfOverlayBalloon from '@lucian2Components/atoms/PfOverlayBalloon';
 import RangeBox from '@lucian2Components/organisms/RangeBox';
-import ClusterChart from '../../../customCharts/ClusterChart';
+import ClusterChart from 'src/components/customCharts/ClusterChart';
 import NewTechRangeBar from '../../organisms/NewTechRangeBar/index';
 import { text } from 'stream/consumers';
 

@@ -9,7 +9,6 @@ import PfOverlayDropdown from "@lucian2Components/molecules/PfOverlayDropdown";
 import { PfOverlayResultProps } from "@lucian2Components/templates/PfOverlayResultTemplate";
 import PfDiagnosisSelectPeriod from "@lucian2Components/molecules/PfDiagnosisSelectPeriod";
 import { flexRowStyle } from "@lucian2Components/templates/PfOverlayTemplate";
-import axios from "axios";
 
 const flexColumnStyle = css`
   ${flexColumn};

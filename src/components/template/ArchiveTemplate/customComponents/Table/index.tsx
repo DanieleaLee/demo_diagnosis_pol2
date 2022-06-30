@@ -1,17 +1,13 @@
 import { css } from "@emotion/react";
+import { useRouter } from 'next/router';
 import { useMemo, useState, useEffect } from "react";
 import { useTable, useSortBy, useGlobalFilter } from "react-table";
-import { BiLayer } from "react-icons/bi";
 import { HiServer } from "react-icons/hi";
 import Colors from "@styles/colors";
-import * as Typography from "@styles/typography";
 import { flexRow } from "@styles";
-// import CheckBox from "@components/atoms/CheckBox";
-import CheckBoxV2 from "@pages/diagnosis/_temp/atoms/CheckBoxV2";
+import CheckBox from "@components/template/ArchiveTemplate/customComponents/Checkbox";
 import TblHeaderPrimary from "@components/molecules/TblHeaderPrimary";
-import { TinyBg } from "@lucian2Components/atoms/Button/TextButtonTinyWithBg";
-import { NumberSchema } from "yup";
-import { useRouter } from 'next/router';
+import * as TextButton from "@components/template/ArchiveTemplate/customComponents/TextButton";
 
 const TbContainerCss = css`
   display: block;
@@ -160,7 +156,7 @@ const Table = ({
             .map((el) => selectTable.includes(el))
             .every((e) => !!e);
           return (
-            <CheckBoxV2
+            <CheckBox
               containerCss={css`
                 position: relative;
                 top: 6px;
@@ -176,7 +172,7 @@ const Table = ({
         Cell: ({ row }) => {
           return (
             <div css={css`width: 30px; position: absolute;`}>
-            <CheckBoxV2
+            <CheckBox
               containerCss={css`
                 position: relative;
                 top: 4px;
@@ -249,7 +245,7 @@ const Table = ({
         Cell: ({ row }) => {
           return (
             <div css={[TbButtonWrapCss]}>
-              <TinyBg
+              <TextButton.Tiny
                 icon={() => <HiServer color={Colors.backgroundWhite} size={14} />}
                 title="Diagnosis"
                 bgTheme="accent"

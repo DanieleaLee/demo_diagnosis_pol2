@@ -1,13 +1,13 @@
 import React, { useState, useCallback } from 'react';
 import { css } from '@emotion/react';
-import HorizontalBarChart from '../customCharts/HorizontalBarChart';
-import TreemapChartSimple from '../customCharts/TreemapChartSimple';
-import RadarChartSimple from '../customCharts/RadarChartSimple';
-import SingleScoreChart from '../customCharts/SingleScoreChart';
-import TreemapChartGradient from '../customCharts/TreemapChartGradient';
-import { obama_budget_2012 } from '../customCharts/TreemapChartGradient/obama_budget_2012';
-import { singleSectionData } from '../customCharts/TreemapChartGradient/singleSectionData';
-import { convertData } from '../customCharts/TreemapChartGradient/convertData';
+import HorizontalBarChart from '@components/customCharts/HorizontalBarChart';
+import TreemapChartSimple from '@components/customCharts/TreemapChartSimple';
+import RadarChartSimple from '@components/customCharts/RadarChartSimple';
+import SingleScoreChart from '@components/customCharts/SingleScoreChart';
+import TreemapChartGradient from '@components/customCharts/TreemapChartGradient';
+import { obama_budget_2012 } from '@components/customCharts/TreemapChartGradient/obama_budget_2012';
+import { singleSectionData } from '@components/customCharts/TreemapChartGradient/singleSectionData';
+import { convertData } from '@components/customCharts/TreemapChartGradient/convertData';
 
 const ChartTest3 = () => {
   const [factor3Data, setFactor3Data] = useState(FACTOR3_DATA);

@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import DiagnosisTemplate from "@components/template/DiagnosisTemplate"; // 0512
 import OverlayConfigTemplate from "@components/template/OverlayConfigTemplate"; // 0512
 import OverlayResultTemplate from "@components/template/OverlayResultTemplate"; // 0512
-import PfTemplate from "src/components/template/ArchiveTemplate";
-import { BODY_BUTTONS_HEIGHT } from "@pages/diagnosis/_temp/config/constants";
+import ArchiveTemplate from '@components/template/ArchiveTemplate';
+import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
 import { css } from "@emotion/react";
 import Colors from "@styles/colors";
 import { useRouter } from "next/router";
-import ArchiveTemplate from 'src/components/template/ArchiveTemplate';
 
 
 export const bodyMainWrap = css`

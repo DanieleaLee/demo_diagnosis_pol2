@@ -1,19 +1,17 @@
 import { css } from "@emotion/react";
 import { useRef, useState } from "react";
-import * as TextButton from "@components/atoms/TextButton";
 import Colors from "@styles/colors";
-import { BODY_BUTTONS_HEIGHT } from "@pages/diagnosis/_temp/config/constants";
+import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
 import * as Typography from "@styles/typography";
 import { HiServer } from "react-icons/hi";
-import LinkToIndex from "./LinkToIndex";
-import Summary from "./Summary";
-import StockInfo from "./StockInfo";
-import GicsSectors from "./GicsSectors";
-import QraftFactors from "./QraftFactors";
-import Inflation from "./Inflation";
-import diagnosisData from "@pages/diagnosis/_temp/data/diagnosis";
-
-import PfOverlayDropdown from "src/components/_temp/v2/lucian/molecules/PfOverlayDropdown";
+import * as TextButton from "@components/atoms/TextButton";
+import LinkToIndex from "@components/template/DiagnosisTemplate/customComponents/LinkToIndex";
+import Summary from "@components/template/DiagnosisTemplate/customComponents/Summary";
+import StockInfo from "@components/template/DiagnosisTemplate/customComponents/StockInfo";
+import GicsSectors from "@components/template/DiagnosisTemplate/customComponents/GicsSectors";
+import QraftFactors from "@components/template/DiagnosisTemplate/customComponents/QraftFactors";
+import Inflation from "@components/template/DiagnosisTemplate/customComponents/Inflation";
+import diagnosisData from "../../../data/diagnosis";
 import { useRouter } from "next/router";
 
 
@@ -159,13 +157,6 @@ const DiagnosisTemplate = ({ dataDiagnosis, portfolioName,setSelectedPortfolioNa
           <Typography.Subtitle2 color="#2F3B43" lineHeight="18.15px">
             {`[${portfolioName}] Inflation Enhancing Version 1`}
           </Typography.Subtitle2>
-          {/* <PfOverlayDropdown
-            type="rebalancing"
-            width={140}
-            contents={contents}
-            radioData={REBALANCING_DATA as Array<{ id: number; name: string }>}
-            handleChangeRebalancing={handleChangeRebalancing}
-          /> */}
           <select
             css={selectStyle}
             name="mode"
@@ -180,7 +171,6 @@ const DiagnosisTemplate = ({ dataDiagnosis, portfolioName,setSelectedPortfolioNa
             <option value="minimum">Mode : Minimum</option>
           </select>
         </div>
-
         <div
           css={[
             bodyHeadIcon("440px"),
