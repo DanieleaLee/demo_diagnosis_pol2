@@ -1,16 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { css } from "@emotion/react";
-import RangeRow from "@lucian2Components/molecules/RangeRow";
-
-const invalidBoxContainerStyle = (boxPadding: number) => css`
-  position: absolute;
-  left: 26px;
-  bottom: 20px;
-  width: calc(100% - ${boxPadding}px);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-`;
+import RangeBtn from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer/RangeBtn";
 
 type RangeType = { [s: string]: { min: number; max: number } };
 type RangeBoxProps = {
@@ -19,17 +8,19 @@ type RangeBoxProps = {
   rowId: string;
   onSubmit?: (rangeData: any) => void;
   openBox?: boolean;
+  value?:number;
 };
-const RangeBox = ({
+
+const RangeBar = ({
   disabled,
   rowData,
   rowId,
-  onSubmit,
-  openBox = true
+  openBox = true,
+  value
 }: RangeBoxProps) => {
   const [data, setData] = useState(rowData);
   const [ranges, setRanges] = useState<RangeType>();
-  const [totalRanges, setTotalRanges] = useState({ min: 0, max: 100 });
+  const [totalRanges, setTotalRanges] = useState({ min: 0, max: value });
   const [sums, setSums] = useState<{ minSum: number; maxSum: number }>();
 
   useEffect(() => {
@@ -45,14 +36,13 @@ const RangeBox = ({
       { minSum: 0, maxSum: 0 }
     );
     setSums(_sums);
-    onSubmit && onSubmit(ranges);
   }, [ranges]);
 
   useEffect(() => {
     if (!data) return;
     const temp = {};
     data.forEach((el) => {
-      temp[el.id] = { min: 0, max: 100 };
+      temp[el.id] = { min: 0, max: value };
     });
     setRanges(temp);
   }, [data]);
@@ -66,11 +56,7 @@ const RangeBox = ({
     setRanges(_ranges);
   }, [totalRanges]);
 
-  const changeRangeHandle = (props: {
-    id: string;
-    min: number;
-    max: number;
-  }) => {
+  const applyHandler = (props: { id: string; min: number; max: number }) => {
     const { id, min, max } = props;
     setRanges((prev) => ({ ...prev, [id]: { min: min, max: max } }));
   };
@@ -78,34 +64,20 @@ const RangeBox = ({
   return (
     <div>
       {ranges && (
-        <RangeRow
+        <RangeBtn
           key={rowId}
           rowId={rowId}
-          minLimit={100}
+          minLimit={value}
           maxLimit={0}
           minValue={ranges[rowId].min}
           maxValue={ranges[rowId].max}
-          onApply={changeRangeHandle}
+          onApply={applyHandler}
           disabled={disabled}
           openBox={openBox}
         />
       )}
-      {/* {!disabled && sums && (
-        <div css={invalidBoxContainerStyle(54)}>
-          {sums.maxSum < 100 && (
-            <InvalidBox
-              errorMessage={`Sum of max is [${sums.maxSum}]%, sum of max should be more than or equal 100%`}
-            />
-          )}
-          {sums.minSum > 50 && (
-            <InvalidBox
-              errorMessage={`Sum of min is [${sums.minSum}]%, sum of min should be less than or equal 100%`}
-            />
-          )}
-        </div>
-      )} */}
     </div>
   );
 };
 
-export default RangeBox;
+export default RangeBar;

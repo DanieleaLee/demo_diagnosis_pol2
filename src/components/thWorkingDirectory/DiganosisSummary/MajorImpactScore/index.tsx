@@ -3,7 +3,7 @@ import { useState } from "react";
 import HelpTooltip from "@components/molecules/HelpTooltip";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 import * as Typography from "@styles/typography";
-import shortNameList from "../../../../data/short_full_layer_name.json";
+import shortNameList from "src/data/short_full_layer_name.json";
 
 const MajorImpactScoreContainerStyle = css`
   height: 167px;

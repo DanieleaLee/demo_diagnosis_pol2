@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
 import BasicBox from "@components/atoms/BasicBox";
-import { flexRowStyle } from "@lucian2Components/templates/PfOverlayTemplate";
+import { flexRowStyle } from "@components/template/OverlayConfigTemplate";
 import { SubDataType } from "@components/template/DiagnosisTemplate/customComponents/GicsSectors/StockDiagnosisBoxes";
 import {
   BiBattery,
@@ -20,7 +20,7 @@ import {
   BiTrendingUp,
   BiLineChart,
   BiShuffle,
-  BiDonateHeart,
+  BiDonateHeart
 } from "react-icons/bi";
 import Momemtum from "./Icons/Momemtum";
 
@@ -77,12 +77,17 @@ const iconList = {
   Growth: <BiLineChart size={22} color="#484848" />,
   Profitability: <BiTrendingUp size={22} color="#484848" />,
   Volatility: <BiShuffle size={22} color="#484848" />,
-  Value: <BiDonateHeart size={22} color="#484848" />,
+  Value: <BiDonateHeart size={22} color="#484848" />
 };
 
 const StockDiagnosisBox = ({ width, height, subData, subject }: Props) => {
   return (
-    <BasicBox width={width} height={height} borderColor={Colors.borderPrimary} borderRadius={4}>
+    <BasicBox
+      width={width}
+      height={height}
+      borderColor={Colors.borderPrimary}
+      borderRadius={4}
+    >
       <div css={containerCss}>
         <div css={boxLeftWrapCss}>
           {iconList[subject]}
@@ -102,7 +107,9 @@ const StockDiagnosisBox = ({ width, height, subData, subject }: Props) => {
               <Typography.Body2 color={Colors.button2} css={tickerCss}>
                 {s.title}
               </Typography.Body2>
-              <Typography.Body3 color={Colors.button2}>{s.subTitle}</Typography.Body3>
+              <Typography.Body3 color={Colors.button2}>
+                {s.subTitle}
+              </Typography.Body3>
             </div>
           ))}
         </div>

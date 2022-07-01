@@ -4,7 +4,7 @@ import BasicBox from "@components/atoms/BasicBox";
 import * as Typography from "@styles/typography";
 import { BiFileFind } from "react-icons/bi";
 import CummulativeRetrunLineChart from "./CummulativeRetrunLineChart";
-import LINE_DATA from "../../../../../data/Demoport2_tilit8_line_chart.json";
+import LINE_DATA from "src/data/Demoport2_tilit8_line_chart.json";
 
 const tableStyle = css`
   display: block;

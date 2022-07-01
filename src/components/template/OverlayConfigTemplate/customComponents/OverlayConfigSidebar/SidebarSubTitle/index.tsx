@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { css } from "@emotion/react";
 import { EmotionJSX } from "@emotion/react/types/jsx-namespace";
 import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
-import { flexRow, flexRowBetween, flexColumn } from "@styles";
+import { flexRow, flexRowBetween } from "@styles";
 import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/OverlayConfigSidebar/RadioSelection";
-import {SidebarDataType,flexRowStyle} from "@components/template/OverlayConfigTemplate";
+import {
+  SidebarDataType,
+  flexRowStyle
+} from "@components/template/OverlayConfigTemplate";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 
 const triangleArrowCss = (clicked: boolean) => css`

@@ -3,12 +3,12 @@ import { css } from "@emotion/react";
 import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
 import { flexColumn, flexRow, flexRowBetween } from "@styles";
+import TiltingRangebar from "./TiltingRangebar";
+import Input from "@components/atoms/Input";
+import MultiInput from "./MultiInput";
 import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/OverlayConfigSidebar/RadioSelection";
-import PfOverlayTiltingRangeBar from "@lucian2Components/atoms/PfOverlayTiltingRangeBar";
-import PfOverlayInput from "@lucian2Components/atoms/PfOverlayInput";
-import PfOverlayMultiInput from "@lucian2Components/molecules/PfOverlayMultiInput";
 import BasicBox from "@components/atoms/BasicBox";
-import HelpTooltip from "src/components/molecules/HelpTooltip";
+import HelpTooltip from "@components/molecules/HelpTooltip";
 
 const PfOlLayerConfigModelCss = css`
   padding-bottom: 24px;
@@ -48,11 +48,11 @@ const PfOlLayerConfigRadioWrapCss = css`
   }
 
   & > div:first-of-type {
-    padding-bottom:14px;
+    padding-bottom: 14px;
   }
 
-  & > div:nth-of-type(4){
-    padding-top:13px;
+  & > div:nth-of-type(4) {
+    padding-top: 13px;
   }
 `;
 
@@ -81,20 +81,16 @@ const InflationLayerConfig = ({}) => {
   const [tiltingValue, setTiltingValue] = useState("");
   const [turnoverValue, setTurnoverValue] = useState("");
   // 모든 데이터들을 가지고 있는 객체
-  const [layerConfigData, setLayerConfigData] = useState<LayerConfigDataType>(
-
-    {
-      model: "QRAFT ML Model",
-      tilting: "",
-      option: {
-        name: "",
-        weight: "",
-        holdings: "",
-      },
-      turnover: "",
-    }
-
-  );
+  const [layerConfigData, setLayerConfigData] = useState<LayerConfigDataType>({
+    model: "QRAFT ML Model",
+    tilting: "",
+    option: {
+      name: "",
+      weight: "",
+      holdings: ""
+    },
+    turnover: ""
+  });
 
   const onSelectModelHandler = (event: ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
@@ -129,12 +125,9 @@ const InflationLayerConfig = ({}) => {
     // apiHandler();
   }, [layerConfigData]);
 
-
   useEffect(() => {
     // console.log('LC PAGE layerConfigData INIT : ', layerConfigData)
   }, []);
-
-
 
   return (
     <BasicBox
@@ -174,8 +167,21 @@ const InflationLayerConfig = ({}) => {
         </div>
       </div>
       <div css={PfOlLayerConfigTiltingCss}>
-        <div css={css`display: flex; flex-direction: row; align-items: flex-start;`}>
-          <Typography.Body2 color={Colors.buttonSubmit} css={css`display:flex;align-items:center; padding-right: 3px;`}>
+        <div
+          css={css`
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+          `}
+        >
+          <Typography.Body2
+            color={Colors.buttonSubmit}
+            css={css`
+              display: flex;
+              align-items: center;
+              padding-right: 3px;
+            `}
+          >
             Overlay Titling Strength
           </Typography.Body2>
           <HelpTooltip
@@ -186,17 +192,13 @@ const InflationLayerConfig = ({}) => {
           />
         </div>
         <div css={PfOlLayerConfigTiltingWrapCss}>
-          <PfOverlayTiltingRangeBar
+          <TiltingRangebar
             min={0}
             max={10}
             onTiltingValChangeHandler={onValChange}
             value={tiltingValue}
           />
-          <PfOverlayInput
-            name="tilting"
-            value={tiltingValue}
-            onChange={onValChange}
-          />
+          <Input name="tilting" value={tiltingValue} onChange={onValChange} />
         </div>
       </div>
       <div css={PfOlLayerConfigOtherCss}>
@@ -224,7 +226,7 @@ const InflationLayerConfig = ({}) => {
             fontSize={11}
             fontWeight={500}
           />
-          <PfOverlayMultiInput
+          <MultiInput
             type="all"
             setLayerConfigData={setLayerConfigData}
             selectedModel={selectedModel}
@@ -242,7 +244,7 @@ const InflationLayerConfig = ({}) => {
             fontSize={11}
             fontWeight={500}
           />
-          <PfOverlayMultiInput
+          <MultiInput
             type="impact"
             setLayerConfigData={setLayerConfigData}
             selectedModel={selectedModel}
@@ -258,7 +260,7 @@ const InflationLayerConfig = ({}) => {
         </Typography.Body2>
         {/* prettier-ignore */}
         <div css={css`${flexRow}`}>
-          <PfOverlayInput
+          <Input
             name="turnover"
             value={turnoverValue}
             onChange={onTurnOverChange}

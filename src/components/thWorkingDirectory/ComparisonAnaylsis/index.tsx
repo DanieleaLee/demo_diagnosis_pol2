@@ -5,13 +5,13 @@ import SelectPortfolioInfo from "./SelectPortfolioInfo";
 import MajorImpactScoreComp from "./MajorImpactScoreComp";
 import ChangeDetails from "./ChangeDetails";
 import DiagnosisComparison from "./DiagnosisComparison";
-import overlayresults_summary from "../../../data/overlay_demo/Demoport2_tilit8_overlayresults_summary.json"; //
-import portfolio1_table_data from "../../../data/overlay_demo/Demoport2_tilit8_changedetailtable_portfolio1.json";
-import portfolio4_table_data from "../../../data/overlay_demo/Demoport2_tilit8_changedetailtable_portfolio4.json";
-import portfolio1_pie_sector_data from "../../../data/overlay_demo/Demoport2_tilit8_portfolio1_piechart_sector.json";
-import portfolio4_pie_sector_data from "../../../data/overlay_demo/Demoport2_tilit8_portfolio4_piechart_sector.json";
-import portfolio1_score_data from "../../../data/overlay_demo/Demoport2_tilit8_portfolio1_score chart.json";
-import portfolio4_score_data from "../../../data/overlay_demo/Demoport2_tilit8_portfolio4_score chart.json";
+import overlayresults_summary from "src/data/overlay_demo/Demoport2_tilit8_overlayresults_summary.json"; //
+import portfolio1_table_data from "src/data/overlay_demo/Demoport2_tilit8_changedetailtable_portfolio1.json";
+import portfolio4_table_data from "src/data/overlay_demo/Demoport2_tilit8_changedetailtable_portfolio4.json";
+import portfolio1_pie_sector_data from "src/data/overlay_demo/Demoport2_tilit8_portfolio1_piechart_sector.json";
+import portfolio4_pie_sector_data from "src/data/overlay_demo/Demoport2_tilit8_portfolio4_piechart_sector.json";
+import portfolio1_score_data from "src/data/overlay_demo/Demoport2_tilit8_portfolio1_score chart.json";
+import portfolio4_score_data from "src/data/overlay_demo/Demoport2_tilit8_portfolio4_score chart.json";
 
 const TABLE_DATA = {
   portfolio1: portfolio1_table_data,

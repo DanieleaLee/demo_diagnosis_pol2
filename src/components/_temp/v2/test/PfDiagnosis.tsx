@@ -9,7 +9,7 @@ import { STACKED_BAR_DATA } from "@tempComponents/v2/test/ChartTest";
 import PfDiagnosisThemeTable from "@lucian2Components/molecules/PfDiagnosisThemeTable/index";
 import PfDiagnosisThemeBar from "@lucian2Components/atoms/PfDiagnosisThemeBar";
 import { ThemeType } from "@lucian2Components/atoms/PfDiagnosisThemeBar/index";
-import { PFDGTHEMEBAR_DUMMY_DATA } from "@lucian2Components/Dummy";
+import { themebar_data } from "src/data/themebar_data";
 
 const PfDgBodyCss = css`
   background: ${Colors.primary1};
@@ -136,7 +136,7 @@ const PfDiagnosis = () => {
           <PfDiagnosisThemeTable />
           <div css={PFDgThemeBarsCss}>
             <div css={PFDgThemeHorizontalBarsCss}>
-              {PFDGTHEMEBAR_DUMMY_DATA.map((item) => (
+              {themebar_data.map((item) => (
                 <div key={item.id} css={PfDgThemeHorizontalBarCss}>
                   <PfDiagnosisThemeBar
                     theme={item.theme as ThemeType}

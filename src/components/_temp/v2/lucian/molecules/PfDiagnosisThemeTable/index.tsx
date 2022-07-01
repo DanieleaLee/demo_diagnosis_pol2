@@ -5,7 +5,7 @@ import { useTable, useSortBy, useGlobalFilter } from "react-table";
 import TblHeaderPrimary from "@components/molecules/TblHeaderPrimary";
 import Colors from "@styles/colors";
 import * as Typography from "@styles/typography";
-import { PFDGTHEME_DUMMY_DATA } from "@lucian2Components/Dummy";
+import { theme_data } from "src/data/theme_data";
 
 const PfDgThemeTbContainerCss = css`
   display: block;
@@ -76,7 +76,7 @@ const PfDiagnosisThemeTable = () => {
               {row.original.name}
             </Typography.Subtitle2>
           );
-        },
+        }
       },
       {
         accessor: "Impact Score",
@@ -98,17 +98,13 @@ const PfDiagnosisThemeTable = () => {
               {row.original.score}
             </Typography.Subtitle3>
           );
-        },
-      },
+        }
+      }
     ];
   }, []);
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable(
-      { columns, data: PFDGTHEME_DUMMY_DATA },
-      useGlobalFilter,
-      useSortBy
-    );
+    useTable({ columns, data: theme_data }, useGlobalFilter, useSortBy);
 
   return (
     <div css={PfDgThemeTbContainerCss}>

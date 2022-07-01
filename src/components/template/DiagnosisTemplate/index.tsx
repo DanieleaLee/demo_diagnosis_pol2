@@ -11,7 +11,7 @@ import StockInfo from "@components/template/DiagnosisTemplate/customComponents/S
 import GicsSectors from "@components/template/DiagnosisTemplate/customComponents/GicsSectors";
 import QraftFactors from "@components/template/DiagnosisTemplate/customComponents/QraftFactors";
 import Inflation from "@components/template/DiagnosisTemplate/customComponents/Inflation";
-import diagnosisData from "../../../data/diagnosis";
+import diagnosisData from "src/data/diagnosis";
 import { useRouter } from "next/router";
 
 

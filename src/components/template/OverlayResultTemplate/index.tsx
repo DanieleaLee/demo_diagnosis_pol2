@@ -5,31 +5,14 @@ import * as TextButton from "@components/atoms/TextButton";
 import Colors from "@styles/colors";
 import ComparisonAnalysis from "@components/thWorkingDirectory/ComparisonAnaylsis";
 import * as Typography from "@styles/typography";
-import PfOverlayChartPerformance from "@lucian2Components/organisms/PfOverlayChartPerformance";
-import PfOverlayFilterBox from "@lucian2Components/organisms/PfOverlayFilterBox/index";
-import { ContentsType } from "@lucian2Components/organisms/PfOverlayFilterBox/index";
-import { PFOVERLAY_DUMMAY_DATA } from "@lucian2Components/Dummy";
+import ChartPerformance from "./ChartPerformance";
+import FilterBox, { ContentsType } from "./FilterBox";
+import { overlay_result_filterbox } from "src/data/overlay_result_filterbox";
 import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
-import diagnosisData from "../../../data/diagnosis";
-import linechartData from "../../../data/Demoport2_tilit8_line_chart.json";
-import tableData from "../../../data/overlay_demo/Demoport2_tilit8_performance_table.json";
+import diagnosisData from "src/data/diagnosis";
+import linechartData from "src/data/Demoport2_tilit8_line_chart.json";
+import tableData from "src/data/overlay_demo/Demoport2_tilit8_performance_table.json";
 import { useRouter } from "next/router";
-
-const UniverseInfo = {
-  title: "Investment Universe",
-  label: ["Number of Index", 4],
-  assetClass: {
-    Equity: 10,
-    "Fixled Income": 20,
-    Commodity: 10,
-  },
-  economicDev: {
-    "Blended Development": 60,
-    "Developed Markets": 20,
-    "Emerging Markets": 10,
-    "Frintier Markets": 10,
-  },
-};
 
 export type AAPortfolioPipelinePageProps = {
   portfolioName: string;
@@ -123,11 +106,11 @@ export const bodyMain = (width) => css`
 export const bodyItem = css``;
 
 const OverlayConfigTemplate = ({ portfolioName }) => {
-  console.log('OverlayResultTemplate portfolioName : ', portfolioName)
+  console.log("OverlayResultTemplate portfolioName : ", portfolioName);
   const router = useRouter();
-  const myTopScoreData = diagnosisData['portfolio2']?.summary.topScores;
-  const mySectorData = diagnosisData['portfolio2']?.summary.sector;
-  
+  const myTopScoreData = diagnosisData["portfolio2"]?.summary.topScores;
+  const mySectorData = diagnosisData["portfolio2"]?.summary.sector;
+
   const [data, setData] = useState([]);
   // simulate 버튼 눌렀을 때 show handling state
   const [showChart, setShowChart] = useState(true);
@@ -135,19 +118,19 @@ const OverlayConfigTemplate = ({ portfolioName }) => {
   const [contents, setContents] = useState<ContentsType>({
     period: {
       startDate: "",
-      endDate: "",
+      endDate: ""
     },
     cost: "",
     benchmark: "Benchmark",
-    rebalancing: "",
+    rebalancing: ""
   });
-  
+
   const showChartHandler = () => {
     setShowChart(true);
   };
 
   useEffect(() => {
-    setData(PFOVERLAY_DUMMAY_DATA);
+    setData(overlay_result_filterbox);
   }, []);
 
   const boxTitleStyle = css`
@@ -159,10 +142,22 @@ const OverlayConfigTemplate = ({ portfolioName }) => {
   return (
     <div css={bodyContainerWrap("100%", "100%", Colors.backgroundPrimary1, "")}>
       <div css={[bodyHeadWrap("1852px")]}>
-        <Typography.Subtitle4 color={"#838B8F"}>Overlay Result</Typography.Subtitle4>
+        <Typography.Subtitle4 color={"#838B8F"}>
+          Overlay Result
+        </Typography.Subtitle4>
         <div css={[bodyHeadIcon("540px")]}>
-          <TextButton.Small title="Prev" disabled={false} bgTheme="accent" onClick={() => router.push("/overlayconfig")} />
-          <TextButton.Small title="Save My Portfolio" disabled={false} bgTheme="common" onClick={() => {}} />
+          <TextButton.Small
+            title="Prev"
+            disabled={false}
+            bgTheme="accent"
+            onClick={() => router.push("/overlayconfig")}
+          />
+          <TextButton.Small
+            title="Save My Portfolio"
+            disabled={false}
+            bgTheme="common"
+            onClick={() => {}}
+          />
         </div>
       </div>
 
@@ -172,13 +167,16 @@ const OverlayConfigTemplate = ({ portfolioName }) => {
             <Typography.Subtitle4 css={boxTitleStyle} lineHeight={1}>
               Comparison Analysis
             </Typography.Subtitle4>
-            { myTopScoreData && mySectorData &&
-              <ComparisonAnalysis myTopScoreData={myTopScoreData} mySectorData={mySectorData}/>
-            }
+            {myTopScoreData && mySectorData && (
+              <ComparisonAnalysis
+                myTopScoreData={myTopScoreData}
+                mySectorData={mySectorData}
+              />
+            )}
           </div>
 
           <div css={[bodyItem]}>
-            <PfOverlayFilterBox
+            <FilterBox
               data={data}
               contents={contents}
               setContents={setContents}
@@ -190,12 +188,12 @@ const OverlayConfigTemplate = ({ portfolioName }) => {
                 margin-top: 13px;
               `}
             ></span>
-            <PfOverlayChartPerformance 
-              data={data} 
-              linechartData={linechartData} 
-              tableData_={tableData} 
-              contents={contents} 
-              showChart={showChart} 
+            <ChartPerformance
+              data={data}
+              linechartData={linechartData}
+              tableData_={tableData}
+              contents={contents}
+              showChart={showChart}
             />
           </div>
         </div>

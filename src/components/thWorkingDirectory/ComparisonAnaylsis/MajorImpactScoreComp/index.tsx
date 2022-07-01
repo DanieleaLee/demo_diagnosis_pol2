@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 import * as Typography from "@styles/typography";
 import { BiChevronsDown } from "react-icons/bi";
-import shortNameList from "../../../../data/short_full_layer_name.json";
+import shortNameList from "src/data/short_full_layer_name.json";
 
 const MajorImpactScoreCompContainerStyle = css``;
 const titleContainerStyle = css`margin-bottom: 12px;`; // prettier-ignore
