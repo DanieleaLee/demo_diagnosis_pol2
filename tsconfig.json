@@ -36,8 +36,6 @@
       "@taehyunComponents": ["src/components/_temp/taehyun"],
       "@interfaces/*": ["src/interfaces/*"],
       "@interfaces": ["src/interfaces"],
-      "@data/*": ["src/data/*"],
-      "@data": ["src/data"],
       "@modules/*": ["modules/*"],
       "@modules": ["modules"],
       "@pages/*": ["pages/*"],

@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import Colors from "@styles/colors";
 import * as Typography from "@styles/typography";
 import { flexRow, flexRowBetween } from "@styles";
-import PfOverlayInput from "@lucian2Components/atoms/PfOverlayInput";
+import Input from "@components/template/OverlayConfigTemplate/customComponents/OverlayInflationLayer/InflationLayerConfig/Input";
 import { LayerConfigDataType } from "@components/template/OverlayConfigTemplate/customComponents/OverlayInflationLayer/InflationLayerConfig";
 
 const PfOlMultiInputContainerCss = css``;
@@ -112,7 +112,7 @@ const MultiInput = ({
         </Typography.Body5>
         {/* prettier-ignore */}
         <div css={css`${flexRow}`}>
-          <PfOverlayInput
+          <Input
             name="weight"
             value={type === "all" ? values.weight : impactValues.weight}
             onChange={onSelectOtherHandler}
@@ -124,7 +124,7 @@ const MultiInput = ({
         <Typography.Body5 color={Colors.buttonSubmit}>
           Maximum Number of Holdings
         </Typography.Body5>
-        <PfOverlayInput
+        <Input
           name="holdings"
           value={type === "all" ? values.holdings : impactValues.holdings}
           onChange={onSelectOtherHandler}
