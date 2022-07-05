@@ -6,12 +6,12 @@ import Image from "next/image";
 import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
 import { flexRow, flexColumn } from "@styles";
-import HoldingsTable from "./HoldingsTable";
-import InflationLayerConfig from "./InflationLayerConfig";
-import { holdings_table_data } from "src/data/holdings_table_data";
-import {SidebarDataType,flexRowStyle} from "@components/template/OverlayConfigTemplate";
+import { SidebarDataType,flexRowStyle } from "@components/template/OverlayConfigTemplate";
+import HoldingsTable from "@components/template/OverlayConfigTemplate/customComponents/OverlayInflationLayer/HoldingsTable";
 import BasicBox from "@components/atoms/BasicBox";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
+import InflationLayerConfig from "./InflationLayerConfig";
+import { holdings_table_data } from "src/data/holdings_table_data";
 
 const dotStyle = css`
   width: 3.2px;
@@ -30,7 +30,6 @@ const PfOlUpperLeftCss = css`
   ${flexRow};
   white-space: pre-wrap;
   padding: 8px 0 9px 0;
-
   & > p {
     padding-right: 14px;
   }

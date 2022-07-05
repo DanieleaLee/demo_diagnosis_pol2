@@ -37,6 +37,7 @@ type Props = {
   maxValue: number;
   onApply: (props: { id?: string; min: number; max: number }) => void;
   openBox?: boolean;
+  value?:number;
 };
 
 const RangeBtn = ({
@@ -47,7 +48,8 @@ const RangeBtn = ({
   minValue,
   maxValue,
   onApply,
-  openBox
+  openBox,
+  value
 }: Props) => {
   const btnRef = useRef<HTMLButtonElement>();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -91,7 +93,7 @@ const RangeBtn = ({
           css={css`
             position: absolute;
             top: ${boxYposition}px;
-            right: 170px;
+            left:${value === 100 ? '520px':'940px'};
           `}
         >
           <RangeBox

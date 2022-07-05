@@ -70,7 +70,7 @@ const TiltingRangebar = ({
   min,
   max,
   value,
-  onTiltingValChangeHandler
+  onTiltingValChangeHandler,
 }: Props) => {
   const inputRef = useRef<HTMLInputElement>();
 

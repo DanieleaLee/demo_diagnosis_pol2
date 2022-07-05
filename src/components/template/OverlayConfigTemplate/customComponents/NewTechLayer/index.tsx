@@ -11,10 +11,10 @@ import NewTechBox from "./NewTechBox";
 import NewTechKeywordTable from "./NewTechKeywordTable";
 import NewTechSearchbar from "./NewTechSearchbar";
 import OverlayBalloon from "./OverlayBalloon";
+import RangeBar from "./Rangebar";
 import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/OverlayConfigSidebar/RadioSelection";
 import { flexRowStyle } from "@components/template/OverlayConfigTemplate";
 import ClusterChart from "@components/customCharts/ClusterChart";
-import RangeBar from "./Rangebar";
 
 const containerWrap = (width, height) => css`
   width: ${width}; // 추후에 100%로 변경 예정

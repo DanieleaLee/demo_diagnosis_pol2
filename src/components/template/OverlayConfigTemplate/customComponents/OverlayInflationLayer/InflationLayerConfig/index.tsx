@@ -1,12 +1,12 @@
-import React, { ChangeEvent, useState, useEffect } from "react";
+import React, { ChangeEvent, useState, useEffect, useCallback } from "react";
 import { css } from "@emotion/react";
 import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
 import { flexColumn, flexRow, flexRowBetween } from "@styles";
-import TiltingRangebar from "./TiltingRangebar";
-import MultiInput from "./MultiInput";
-import Input from "@components/atoms/Input";
 import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/OverlayConfigSidebar/RadioSelection";
+import TiltingRangebar from "./TiltingRangebar";
+import Input from "./Input";
+import MultiInput from "./MultiInput";
 import BasicBox from "@components/atoms/BasicBox";
 import HelpTooltip from "@components/molecules/HelpTooltip";
 
@@ -18,7 +18,6 @@ const PfOlLayerConfigModelCss = css`
 const PfOlRadioSelectionWrapCss = css`
   ${flexRow};
   padding: 13px 0 0 21px;
-
   & > div:first-of-type {
     padding-right: 35px;
   }
@@ -42,17 +41,14 @@ const PfOlLayerConfigOtherCss = css`
 const PfOlLayerConfigRadioWrapCss = css`
   padding: 15px 56px 14px 19px;
   border-bottom: 1px dashed ${Colors.diagnosisThemeTableBorder};
-
   & > div {
     padding-bottom: 7px;
   }
-
   & > div:first-of-type {
-    padding-bottom: 14px;
+    padding-bottom:14px;
   }
-
-  & > div:nth-of-type(4) {
-    padding-top: 13px;
+  & > div:nth-of-type(4){
+    padding-top:13px;
   }
 `;
 
@@ -73,7 +69,7 @@ export type LayerConfigDataType = {
 };
 
 // Overlay => Layer configuration 관련된 컴포넌트
-const InflationLayerConfig = ({}) => {
+const PfOverlayLayerConfig = ({}) => {
   // 첫번째 라인 -> 모델 셀렉션하는 state
   const [selectedModel, setSelectedModel] = useState("QRAFT ML Model");
   // Other investment universe에서 옵션 선택하는 state
@@ -81,16 +77,20 @@ const InflationLayerConfig = ({}) => {
   const [tiltingValue, setTiltingValue] = useState("");
   const [turnoverValue, setTurnoverValue] = useState("");
   // 모든 데이터들을 가지고 있는 객체
-  const [layerConfigData, setLayerConfigData] = useState<LayerConfigDataType>({
-    model: "QRAFT ML Model",
-    tilting: "",
-    option: {
-      name: "",
-      weight: "",
-      holdings: ""
-    },
-    turnover: ""
-  });
+  const [layerConfigData, setLayerConfigData] = useState<LayerConfigDataType>(
+
+    {
+      model: "QRAFT ML Model",
+      tilting: "",
+      option: {
+        name: "",
+        weight: "",
+        holdings: "",
+      },
+      turnover: "",
+    }
+
+  );
 
   const onSelectModelHandler = (event: ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
@@ -125,9 +125,12 @@ const InflationLayerConfig = ({}) => {
     // apiHandler();
   }, [layerConfigData]);
 
+
   useEffect(() => {
     // console.log('LC PAGE layerConfigData INIT : ', layerConfigData)
   }, []);
+
+
 
   return (
     <BasicBox
@@ -167,21 +170,8 @@ const InflationLayerConfig = ({}) => {
         </div>
       </div>
       <div css={PfOlLayerConfigTiltingCss}>
-        <div
-          css={css`
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-          `}
-        >
-          <Typography.Body2
-            color={Colors.buttonSubmit}
-            css={css`
-              display: flex;
-              align-items: center;
-              padding-right: 3px;
-            `}
-          >
+        <div css={css`display: flex; flex-direction: row; align-items: flex-start;`}>
+          <Typography.Body2 color={Colors.buttonSubmit} css={css`display:flex;align-items:center; padding-right: 3px;`}>
             Overlay Titling Strength
           </Typography.Body2>
           <HelpTooltip
@@ -198,7 +188,11 @@ const InflationLayerConfig = ({}) => {
             onTiltingValChangeHandler={onValChange}
             value={tiltingValue}
           />
-          <Input name="tilting" value={tiltingValue} onChange={onValChange} />
+          <Input
+            name="tilting"
+            value={tiltingValue}
+            onChange={onValChange}
+          />
         </div>
       </div>
       <div css={PfOlLayerConfigOtherCss}>
@@ -272,4 +266,4 @@ const InflationLayerConfig = ({}) => {
   );
 };
 
-export default InflationLayerConfig;
+export default PfOverlayLayerConfig;

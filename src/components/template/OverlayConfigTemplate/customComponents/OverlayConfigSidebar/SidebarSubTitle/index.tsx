@@ -5,10 +5,7 @@ import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
 import { flexRow, flexRowBetween } from "@styles";
 import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/OverlayConfigSidebar/RadioSelection";
-import {
-  SidebarDataType,
-  flexRowStyle
-} from "@components/template/OverlayConfigTemplate";
+import {SidebarDataType,flexRowStyle} from "@components/template/OverlayConfigTemplate";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 
 const triangleArrowCss = (clicked: boolean) => css`

@@ -74,6 +74,7 @@ const RangeBar = ({
           onApply={applyHandler}
           disabled={disabled}
           openBox={openBox}
+          value={value}
         />
       )}
     </div>

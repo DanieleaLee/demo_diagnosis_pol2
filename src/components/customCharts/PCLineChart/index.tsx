@@ -3,7 +3,7 @@ import { EChartsOption, SeriesOption } from "echarts/types/dist/echarts";
 import { css, SerializedStyles } from "@emotion/react";
 import { useEffect, useState } from "react";
 import { ClipLoader } from "react-spinners";
-import { pfResultType } from "../../lucian/templates/PfTemplate/index";
+import { pfResultType } from "@components/template/ArchiveTemplate";
 
 const containerWrapper = css``;
 

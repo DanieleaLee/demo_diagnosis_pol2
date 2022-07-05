@@ -170,7 +170,7 @@ const StackedBarChart = ({
         },
         formatter: (params) => {
           const { dataIndex, marker, seriesIndex, seriesName } = params;
-
+          
           if (dataIndex === 1) return;
           const { data } = _series[seriesIndex];
           const qq = data.map((d, i) => {
