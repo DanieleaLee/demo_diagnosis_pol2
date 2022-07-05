@@ -4,7 +4,7 @@ import { EmotionJSX } from "@emotion/react/types/jsx-namespace";
 import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
 import { flexRow, flexRowBetween } from "@styles";
-import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/OverlayConfigSidebar/RadioSelection";
+import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/RadioSelection";
 import {SidebarDataType,flexRowStyle} from "@components/template/OverlayConfigTemplate";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 

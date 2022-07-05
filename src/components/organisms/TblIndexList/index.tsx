@@ -1,20 +1,8 @@
 import TablePrimary from "@components/organisms/TablePrimary";
-import {usePortfolioSel, usePortfolioSelValue} from "@recoil/hooks/usePortfolioSel";
-import {useMemo, useState} from "react";
-import CheckBox from "@components/atoms/CheckBox";
+import {useMemo} from "react";
 import {css} from "@emotion/react";
-import TblHeaderPrimarya from "@components/molecules/TblHeaderPrimary";
 import {CheckboxSelColumn} from "@components/organisms/TablePrimary";
-import TblEditableField from "@components/molecules/TblEditableField";
-import TblHeaderPrimary from "@components/molecules/TblHeaderPrimary";
-
-import TextButton from "@components/atoms/TextButton";
-import Colors from "@styles/colors";
-import {GoGraph} from "react-icons/go";
-import Buttonable from "@components/atoms/Buttonable";
-import {AiFillMinusCircle, AiFillPlusCircle} from "react-icons/ai";
-
-
+import HeaderSort from "@components/molecules/HeaderSort";
 
 export const useTblIndexListColumns = ()=> {
   return useMemo(()=>{
@@ -24,42 +12,42 @@ export const useTblIndexListColumns = ()=> {
       },
       {
         accessor: 'code',
-        Header: ({column})=> <TblHeaderPrimary column={column} columnName={'Index Name'}/>,
+        Header: ({column})=> <HeaderSort column={column} columnName={'Index Name'} size={12}/>,
         width: 'auto',
       },
       {
         accessor: 'asset_class',
-        Header: ({column})=> <TblHeaderPrimary column={column} columnName={'Asset Class'}/>,
+        Header: ({column})=> <HeaderSort column={column} columnName={'Asset Class'} size={12}/>,
         width: 'auto',
       },
       {
         accessor: 'leverage',
-        Header: ({column})=> <TblHeaderPrimary column={column} columnName={'Leveraged/ Inverse'}/>,
+        Header: ({column})=> <HeaderSort column={column} columnName={'Leveraged/ Inverse'} size={12}/>,
         width: 'auto',
       },
       {
         accessor: 'size',
-        Header: ({column})=> <TblHeaderPrimary column={column} columnName={'Size'}/>,
+        Header: ({column})=> <HeaderSort column={column} columnName={'Size'} size={12}/>,
         width: 'auto',
       },
       {
         accessor: 'economic_development',
-        Header: ({column})=> <TblHeaderPrimary column={column} columnName={'Economic Development'}/>,
+        Header: ({column})=> <HeaderSort column={column} columnName={'Economic Development'} size={12}/>,
         width: 'auto',
       },
       {
         accessor: 'region',
-        Header: ({column})=> <TblHeaderPrimary column={column} columnName={'Region'}/>,
+        Header: ({column})=> <HeaderSort column={column} columnName={'Region'} size={12}/>,
         width: 'auto',
       },
       {
         accessor: 'geography',
-        Header: ({column})=> <TblHeaderPrimary column={column} columnName={'Geography'}/>,
+        Header: ({column})=> <HeaderSort column={column} columnName={'Geography'} size={12}/>,
         width: 'auto',
       },
       {
         accessor: 'tag',
-        Header: ({column})=> <TblHeaderPrimary column={column} columnName={'Tags'}/>,
+        Header: ({column})=> <HeaderSort column={column} columnName={'Tags'} size={12}/>,
         Cell: ({cell:{value}}) => {
           return <span css={css`font-size:12px;`}>{value.map(v=>`#${v}`).join(', ').slice(0,20)}</span>;
         },
@@ -67,7 +55,7 @@ export const useTblIndexListColumns = ()=> {
       },
       {
         accessor: 'perf',
-        Header: ({column})=> <TblHeaderPrimary column={column} columnName={'Perfomance'}/>,
+        Header: ({column})=> <HeaderSort column={column} columnName={'Perfomance'} size={12}/>,
         width: '300px',
       },
 

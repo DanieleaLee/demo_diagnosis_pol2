@@ -4,7 +4,7 @@ import { css } from '@emotion/react';
 import RangeSetBox from './RangeSetBox';
 import SelectPeriodBox from './SelectPeriodBox';
 import OptimizationGoleBox from './OptimizationGoleBox';
-import CheckBox, { useCheckBox } from '@components/atoms/CheckBox';
+import CheckBox, { useCheckBox } from 'src/components/template/OverlayConfigTemplate/customComponents/NewTechLayer/Checkbox';
 import * as Typography from '@styles/typography';
 import { BiHelpCircle } from 'react-icons/bi';
 import BasicBox from '@components/atoms/BasicBox';

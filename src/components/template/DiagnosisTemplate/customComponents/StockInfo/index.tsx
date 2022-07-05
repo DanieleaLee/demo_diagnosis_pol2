@@ -1,9 +1,9 @@
 import React from "react";
 import { css } from "@emotion/react";
 import BasicBox from "@components/atoms/BasicBox";
+import CummulativeRetrunLineChart from "@components/organisms/CummulativeRetrunLineChart";
 import * as Typography from "@styles/typography";
 import { BiFileFind } from "react-icons/bi";
-import CummulativeRetrunLineChart from "./CummulativeRetrunLineChart";
 import LINE_DATA from "src/data/Demoport2_tilit8_line_chart.json";
 
 const tableStyle = css`

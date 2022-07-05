@@ -7,8 +7,8 @@ import { flexRow } from "@styles";
 import * as Typography from "@styles/typography";
 import { holdings_table_data } from "src/data/holdings_table_data";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
-import HeaderSort from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer/NewTechKeywordTable/HeaderSort";
-import RangeBar from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer/Rangebar";
+import HeaderSort from "@components/molecules/HeaderSort";
+import RangeBar from "@components/template/OverlayConfigTemplate/customComponents/Rangebar";
 
 const PfOlHoldingsTbContainerCss = css`
   display: block;
@@ -185,7 +185,7 @@ const HoldingsTable = () => {
                 `,
               ]}
             >
-              <HeaderSort column={column} columnName="Impact score" />
+              <HeaderSort column={column} columnName="Impact score" isHoldings={true}/>
               <span css={hoverSpanCss}>
                 The higher score is, the better your portfolio performs in high inflation period
               </span>

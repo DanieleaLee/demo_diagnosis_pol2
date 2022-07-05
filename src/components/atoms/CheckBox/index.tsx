@@ -1,122 +1,110 @@
-import Buttonable from "@components/atoms/Buttonable";
-import { css, Theme } from "@emotion/react";
+import React, {ChangeEventHandler, FocusEventHandler, forwardRef} from 'react';
+import { css } from '@emotion/react';
 import { ContainerCss } from "@interfaces/global";
-import React, {MouseEvent, useImperativeHandle, useState, useMemo} from "react";
-import { IconBaseProps } from "react-icons";
-import themeColors from "@styles/colors";
-import {
-  RiCheckboxBlankLine,
-  RiCheckboxFill,
-  RiCheckboxBlankFill
-} from "react-icons/ri";
-import { FONT_SIZE } from "src/config/constants";
-import {Control, Controller} from "react-hook-form";
 
-export const CheckIcon = ({ checked, disabled, error}: Pick<CheckIconProps, "checked" | "disabled"| "error">) => {
-  const size = FONT_SIZE * 1.6;
-
-  if (disabled)
-    return <RiCheckboxBlankFill size={size} color={themeColors.primary5}/>
-
-  if (checked) {
-    return <RiCheckboxFill size={size} color={error?themeColors.error:null}/>;
-  } else {
-    return <RiCheckboxBlankLine size={size} color={error?themeColors.error:null}/>;
-  }
-};
-
-export interface CheckIconProps extends IconBaseProps {
-  control?: Control<any>;
+export interface InputCheckboxProps {
+  type?: 'checkbox';
+  id?: string;
+  name?: string;
+  labelFontSize?: number;
+  label?: React.ReactNode;
   checked?: boolean;
-  error?: boolean;
-  containerCss?: ContainerCss;
-  textCss?:ContainerCss;
+  value?: string | ReadonlyArray<string> | number;
+  width?: number;
+  height?: number;
+  onBlur?: FocusEventHandler<HTMLInputElement>;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
   disabled?: boolean;
-  onChange?: () => void;
-  name? : string;
+  containerCss?:ContainerCss
 }
 
-export const checkFocusStyle = (theme: Theme) => css`
-  color: ${theme.colors.primary2};
-`;
-
-export const flexStyle = css`
+const containerWrapCss = css`
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  `;
+
+
+const inputCss =(width =21,height =21) =>css`
+  width: ${width}px;
+  height:${height}px;
+  vertical-align: top;
+  /* font-size: 32px; */
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-right: 12px;
+  background:#fff;
+  border:1px solid #CED9E1;
+  border-radius:4px; 
+  
+  &[type='checkbox'] {
+    width: ${width}px;
+    height:${height}px;
+    border-radius: 4px;
+  }
+  &:disabled {
+    color: #b4b4b4;
+  }
+  &:checked[type='checkbox'] {
+    border: none;
+    background-image: url("/img/lucian/check.png");
+    background-size: ${width * 1.4}px ${height*1.4}px;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+ 
 `;
 
-export function useCheckBox <T = any>(
-  initialState: boolean
-){
+const labelCss = (labelFontSize:number) => css`
+  display:flex;
+  font-size:${labelFontSize}px;
+  // line-height:32px;
+  align-items:center;
+`
 
-  const [checked, setChecked] = useState(initialState);
+const InputCheckbox = forwardRef<HTMLInputElement, InputCheckboxProps>(
+  (
+    {
+      id,
+      name,
+      value,
+      label,
+      checked,
+      labelFontSize ,
+      width,
+      height,
+      onChange,
+      onBlur,
+      type = 'checkbox',
+      disabled,
+      containerCss,
+      ...rest
+    },
+    ref,
+  ) => {
+    return (
+      <div css={[containerWrapCss,containerCss]}>
+        <label css={[labelCss(labelFontSize)]} htmlFor={id} >
+          <input
+            css={[inputCss(width,height)]}
+            ref={ref}
+            id={id}
+            name={name}
+            value={value}
+            type={type}
+            checked={checked}
+            onBlur={onBlur}
+            onChange={onChange}
+            {...rest}
+            disabled={disabled}
+          />
+          {label}
+        </label>
+      </div>
+    );
+  },
+);
+InputCheckbox.displayName = 'InputCheckbox';
 
-  const onChange = () => {
-    setChecked(!checked);
-  };
-
-  return {checked, onChange}
-}
-
-
-/**
- * 체크박스 입니다
- *
- * rhf-controller(control)의 경우, controller 의 렌더를 통해 onChange 메소드를 따로 정의해서 buttonable을 wrapping.
- * 아닌 경우, 그냥 `useCheckbox` 훅을 이용한 simple checkbox
- */
-const CheckBox = ({ title, name, checked, error, containerCss, tabIndex, disabled, control, onChange, textCss}:CheckIconProps) => {
-
-  const onClick = (event: MouseEvent<HTMLButtonElement>) => {
-    event.stopPropagation();
-    onChange && onChange();
-  };
-
-  const _commonProps = useMemo(()=>({
-    containerCss: [checkFocusStyle, flexStyle, containerCss],
-    className: "py-1",
-    onClick,
-    tabIndex,
-    disabled
-  }),[onClick]);
-
-  return (
-    <>
-      {control &&
-        <Controller
-          control={control}
-          name={name}
-          render={
-            ({field: {value, onChange}}) => {
-
-              const onClick = (event: MouseEvent<HTMLButtonElement>) => {
-                event.stopPropagation();
-                onChange(!value);
-              };
-
-              return <Buttonable
-                // containerCss={[checkFocusStyle, containerCss]}
-                {..._commonProps}
-                onClick={onClick}
-              >
-                <CheckIcon error={error} checked={value} disabled={disabled}/>
-                <p css={css`${error && `color: ${themeColors.error}`}`}> {title}</p>
-              </Buttonable>
-
-            }
-          }
-        />
-      }
-      {!control &&   <Buttonable
-        // containerCss={[checkFocusStyle, containerCss]}
-        {..._commonProps}
-      >
-        <CheckIcon checked={checked} disabled={disabled}/>
-        <p css={[css`margin-left: 10px`,textCss]}>{title}</p>
-      </Buttonable>}
-    </>
-  );
-};
-
-export default CheckBox;
-
-
+export default InputCheckbox;

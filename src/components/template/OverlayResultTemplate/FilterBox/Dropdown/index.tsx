@@ -5,7 +5,7 @@ import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
 import { flexRow, flexRowBetween } from "@styles";
 import {ContentsType} from "@components/template/OverlayResultTemplate/FilterBox";
-import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/OverlayConfigSidebar/RadioSelection";
+import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/RadioSelection";
 
 const PfOlContainerCss = (width: number = 185) => css`
   width: ${width}px;

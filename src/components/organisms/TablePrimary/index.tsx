@@ -1,6 +1,6 @@
 import {css} from "@emotion/react";
 import {useTable, useSortBy, useExpanded, useFilters } from "react-table";
-import CheckBox from "@components/atoms/CheckBox";
+import CheckBox from "@components/atoms/Checkbox";
 import ClipLoader from "react-spinners/ClipLoader";
 import {useTheme } from "@emotion/react";
 

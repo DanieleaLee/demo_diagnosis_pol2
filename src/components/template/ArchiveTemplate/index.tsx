@@ -7,7 +7,7 @@ import Table from "./customComponents/Table";
 import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
 import SearchBar from '@components/molecules/SearchBar';
 import * as TextButton from "@components/atoms/TextButton";
-import portfolioList from "../../../data/portfolio_list/Portfolio_table.json"
+import portfolioList from "src/data/portfolio_list/Portfolio_table.json"
 
 // 알맹이 wrap 그린
 export const bodyContainerWrap = (width, height, bgColor, blColor) => css`

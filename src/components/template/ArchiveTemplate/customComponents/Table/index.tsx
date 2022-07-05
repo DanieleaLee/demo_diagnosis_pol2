@@ -5,8 +5,8 @@ import { useTable, useSortBy, useGlobalFilter } from "react-table";
 import { HiServer } from "react-icons/hi";
 import Colors from "@styles/colors";
 import { flexRow } from "@styles";
-import CheckBox from "@components/template/ArchiveTemplate/customComponents/Checkbox";
-import TblHeaderPrimary from "@components/molecules/TblHeaderPrimary";
+import CheckBox from "@components/atoms/Checkbox";
+import HeaderSort from "@components/molecules/HeaderSort";
 import * as TextButton from "@components/template/ArchiveTemplate/customComponents/TextButton";
 
 const TbContainerCss = css`
@@ -198,7 +198,7 @@ const Table = ({
         accessor: "portfolio_name",
         Header: ({ column }) => (
           <div css={[TbHeaderCss ,css`text-align: left; padding-left: 110px;`]}>
-            <TblHeaderPrimary column={column} columnName={"Portfolio Name"} />
+            <HeaderSort column={column} columnName={"Portfolio Name"} size={12}  />
           </div>
         ),
         Cell: ({ value }) => <div css={[TbCellCss, css`text-align: left; padding-left: 110px;`]}>{value}</div>,
@@ -208,7 +208,7 @@ const Table = ({
         accessor: "underlaying_assets",
         Header: ({ column }) => (
           <div css={[TbHeaderCss]}>
-            <TblHeaderPrimary column={column} columnName={"Underlaying Assets"} />
+            <HeaderSort column={column} columnName={"Underlaying Assets"} size={12} />
           </div>
         ),
         Cell: ({ value }) => <div css={[TbCellCss]}>{value}</div>,
@@ -218,7 +218,7 @@ const Table = ({
         accessor: "holdings",
         Header: ({ column }) => (
           <div css={[TbHeaderCss]}>
-            <TblHeaderPrimary column={column} columnName={"# of Holdings"} />
+            <HeaderSort column={column} columnName={"# of Holdings"} size={12}  />
           </div>
         ),
         Cell: ({ value }) => <div css={[TbCellCss]}>{value}</div>,
@@ -228,7 +228,7 @@ const Table = ({
         accessor: "source",
         Header: ({ column }) => (
           <div css={[TbHeaderCss]}>
-            <TblHeaderPrimary column={column} columnName={"Source"} />
+            <HeaderSort column={column} columnName={"Source"} size={12} />
           </div>
         ),
         Cell: ({ value }) => <div css={[TbCellCss]}>{value}</div>,

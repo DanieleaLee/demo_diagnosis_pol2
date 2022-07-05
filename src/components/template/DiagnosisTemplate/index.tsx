@@ -1,7 +1,8 @@
 import { css } from "@emotion/react";
 import { useRef, useState } from "react";
-import Colors from "@styles/colors";
 import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
+import diagnosisData from "src/data/diagnosis";
+import Colors from "@styles/colors";
 import * as Typography from "@styles/typography";
 import { HiServer } from "react-icons/hi";
 import * as TextButton from "@components/atoms/TextButton";
@@ -11,7 +12,6 @@ import StockInfo from "@components/template/DiagnosisTemplate/customComponents/S
 import GicsSectors from "@components/template/DiagnosisTemplate/customComponents/GicsSectors";
 import QraftFactors from "@components/template/DiagnosisTemplate/customComponents/QraftFactors";
 import Inflation from "@components/template/DiagnosisTemplate/customComponents/Inflation";
-import diagnosisData from "src/data/diagnosis";
 import { useRouter } from "next/router";
 
 

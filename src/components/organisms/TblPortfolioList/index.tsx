@@ -1,9 +1,8 @@
-import { useTable, useSortBy } from "react-table";
 import TableAccordion from "@components/organisms/TableAccordion";
 import PortfolioBrief from "@components/organisms/PortfolioBrief";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { css } from "@emotion/react";
-import TblHeaderPrimary from "@components/molecules/TblHeaderPrimary";
+import HeaderSort from "@components/molecules/HeaderSort";
 import TblEditableField from "@components/molecules/TblEditableField";
 import RowMilestone from "@components/molecules/RowMilestone";
 import TextButton from "@components/atoms/TextButton";
@@ -11,10 +10,7 @@ import Colors from "@styles/colors";
 import { GoGraph } from "react-icons/go";
 import Buttonable from "@components/atoms/Buttonable";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
-import {
-  usePortfolioSel,
-  usePortfolioSelValue,
-} from "@recoil/hooks/usePortfolioSel";
+import {usePortfolioSel,usePortfolioSelValue} from "@recoil/hooks/usePortfolioSel";
 import { CheckboxSelColumn } from "@components/organisms/TablePrimary";
 
 const totalStepsList = [
@@ -29,7 +25,7 @@ export const GenerationflowColumn = ({ accessor = "gflow", ...props }) => {
   return {
     accessor: "gflow",
     Header: ({ column }) => (
-      <TblHeaderPrimary column={column} columnName={"Generation Flow"} />
+      <HeaderSort column={column} columnName={"Generation Flow"}  size={12} />
     ),
     Cell: ({ value }) => (
       <>
@@ -87,7 +83,7 @@ export const useTblPortfolioListColumns = () => {
       {
         accessor: "name",
         Header: ({ column }) => (
-          <TblHeaderPrimary column={column} columnName={"Portfolio Name"} />
+          <HeaderSort column={column} columnName={"Portfolio Name"} size={12} />
         ),
         Cell: (c) => <TblEditableField {...c} />,
         width: "30%",
@@ -96,14 +92,14 @@ export const useTblPortfolioListColumns = () => {
       {
         accessor: "created_at",
         Header: ({ column }) => (
-          <TblHeaderPrimary column={column} columnName={"Created date"} />
+          <HeaderSort column={column} columnName={"Created date"}  size={12} />
         ),
         width: "15%",
       },
       {
         accessor: "updated_at",
         Header: ({ column }) => (
-          <TblHeaderPrimary column={column} columnName={"Last Update"} />
+          <HeaderSort column={column} columnName={"Last Update"}  size={12} />
         ),
         width: "15%",
       },

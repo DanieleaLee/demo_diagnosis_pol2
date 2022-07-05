@@ -4,13 +4,13 @@ import Colors from "@styles/colors";
 import * as Typography from "@styles/typography";
 import { flexRow } from "@styles";
 import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
+import _layerCandidatesData from "src/data/overlay_demo/Demoport2_Layer_candidates.json";
+import diagnosisData from "src/data/diagnosis";
 import * as TextButton from "@components/atoms/TextButton";
 import DiagnosisSummary from "@components/thWorkingDirectory/DiganosisSummary";
 import OverlayConfigSidebar from "./customComponents/OverlayConfigSidebar";
 import OverlayInflationLayer from "./customComponents/OverlayInflationLayer";
 import NewTechLayer from "./customComponents/NewTechLayer";
-import diagnosisData from "src/data/diagnosis";
-import _layerCandidatesData from "src/data/overlay_demo/Demoport2_Layer_candidates.json";
 import { useRouter } from "next/router";
 
 // 알맹이 wrap 그린

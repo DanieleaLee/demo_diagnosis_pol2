@@ -1,9 +1,8 @@
 import {css} from "@emotion/react";
 import * as Typography from "@styles/typography";
-import Colors from "@styles/colors";
 import media from "@styles/media";
 import InputGroup from "@components/molecules/InputGroup";
-import CheckBox from "@components/atoms/CheckBox";
+import CheckBox from "src/components/template/OverlayConfigTemplate/customComponents/NewTechLayer/Checkbox";
 import * as yup from "yup";
 import Submit from "@components/atoms/Submit";
 import{useYupValidation} from "src/lib/hooks/useYupValidation";

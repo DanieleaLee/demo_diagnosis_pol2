@@ -1,9 +1,9 @@
 import React from "react";
 import { css } from "@emotion/react";
-import BasicBox from "src/components/atoms/BasicBox";
 import * as Typography from "@styles/typography";
-import SectorAllocation from "@components/thWorkingDirectory/DiganosisSummary/SectorAllocation";
 import { BiFileFind } from "react-icons/bi";
+import BasicBox from "@components/atoms/BasicBox";
+import SectorAllocation from "@components/thWorkingDirectory/DiganosisSummary/SectorAllocation";
 import HelpTooltip from "@components/molecules/HelpTooltip";
 import RadarChartSimple from "@components/customCharts/RadarChartSimple";
 import RiskReturnScatterChart_v2 from "@components/customCharts/RiskReturnScatterChart_v2";

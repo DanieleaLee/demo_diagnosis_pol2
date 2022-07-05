@@ -6,9 +6,9 @@ import { useTable, useSortBy, useGlobalFilter } from "react-table";
 import Colors from "@styles/colors";
 import { flexCenter } from "@styles";
 import * as Typography from "@styles/typography";
-import HeaderSort from "./HeaderSort";
+import HeaderSort from "@components/molecules/HeaderSort";
 import { NewTechDataType } from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer";
-import RangeBar from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer/Rangebar";
+import RangeBar from "src/components/template/OverlayConfigTemplate/customComponents/Rangebar";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 
 const TbContainerCss = css`

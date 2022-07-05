@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import RangeBtn from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer/RangeBtn";
+import RangeBtn from '@components/template/OverlayConfigTemplate/customComponents/RangeBtn';
 
 type RangeType = { [s: string]: { min: number; max: number } };
 type RangeBoxProps = {
@@ -9,6 +9,7 @@ type RangeBoxProps = {
   onSubmit?: (rangeData: any) => void;
   openBox?: boolean;
   value?:number;
+  isTable?:boolean;
 };
 
 const RangeBar = ({
@@ -16,7 +17,8 @@ const RangeBar = ({
   rowData,
   rowId,
   openBox = true,
-  value
+  value,
+  isTable
 }: RangeBoxProps) => {
   const [data, setData] = useState(rowData);
   const [ranges, setRanges] = useState<RangeType>();
@@ -75,6 +77,7 @@ const RangeBar = ({
           disabled={disabled}
           openBox={openBox}
           value={value}
+          isTable={isTable}
         />
       )}
     </div>

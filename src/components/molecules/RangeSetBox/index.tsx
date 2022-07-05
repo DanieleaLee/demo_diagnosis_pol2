@@ -1,15 +1,14 @@
 import React, { useRef, useState, useEffect, ChangeEvent, useCallback } from 'react';
 import classNames from 'classnames';
-import Image from 'next/image';
 import { css, useTheme, Theme, SerializedStyles } from '@emotion/react';
 import AutoSizeInput from 'react-input-autosize';
 import { CgClose } from 'react-icons/cg';
 import { BiEdit } from 'react-icons/bi';
 import { flexCenter, flexColumn, flexRow } from '@styles';
-import * as Typography from '../../../styles/typography';
-import Colors from '../../../styles/colors';
-import Buttonable from '../../atoms/Buttonable/index';
-import * as Balloon from '../Balloon/index';
+import * as Typography from '@styles/typography';
+import Colors from '@styles/colors';
+import Buttonable from '@components/atoms/Buttonable';
+import * as Balloon from '@components/molecules/Balloon';
 
 export const inlineFlexColumnCenter = css`
   display: inline-flex;

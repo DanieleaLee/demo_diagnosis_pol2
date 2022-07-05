@@ -9,9 +9,9 @@ import React, {
 import AutoSizeInput from "react-input-autosize";
 import { css, useTheme, Theme } from "@emotion/react";
 import { flexCenter, flexColumn, flexRow } from "@styles";
-import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
-import * as Balloon from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer/Balloon";
+import * as Typography from "@styles/typography";
+import * as Balloon from "@components/molecules/Balloon";
 import Buttonable from "@components/atoms/Buttonable";
 import { CgClose } from "react-icons/cg";
 import { BiEdit } from "react-icons/bi";

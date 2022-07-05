@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { css } from "@emotion/react";
 import Buttonable from "@components/atoms/Buttonable";
-import RangeBox from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer/RangeBox";
+import RangeBox from "@components/template/OverlayConfigTemplate/customComponents/RangeBox";
 import { flexCenter } from "@styles";
 
 const containerStyle = css`
@@ -38,6 +38,7 @@ type Props = {
   onApply: (props: { id?: string; min: number; max: number }) => void;
   openBox?: boolean;
   value?:number;
+  isTable?:boolean
 };
 
 const RangeBtn = ({
@@ -49,7 +50,8 @@ const RangeBtn = ({
   maxValue,
   onApply,
   openBox,
-  value
+  value,
+  isTable
 }: Props) => {
   const btnRef = useRef<HTMLButtonElement>();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -93,7 +95,7 @@ const RangeBtn = ({
           css={css`
             position: absolute;
             top: ${boxYposition}px;
-            left:${value === 100 ? '520px':'940px'};
+            left:${value === 100 ? '450px':isTable ? '590px':'870px'};
           `}
         >
           <RangeBox

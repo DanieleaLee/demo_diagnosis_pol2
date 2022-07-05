@@ -12,7 +12,7 @@ import {useUser} from "@recoil/hooks/useUser";
 import {useRouter} from "next/router";
 import {LOCAL_STORAGE} from "src/config/constants";
 import {useLocalStorage} from "react-use";
-import CheckBox, {useCheckBox} from "@components/atoms/CheckBox";
+import CheckBox, {useCheckBox} from "src/components/template/OverlayConfigTemplate/customComponents/NewTechLayer/Checkbox";
 import Link from "next/link";
 import {BsXCircleFill} from "react-icons/bs";
 import {backgroundWrap} from "@styles/common";

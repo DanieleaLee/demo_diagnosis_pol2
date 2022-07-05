@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 import Colors from "@styles/colors";
-import { flexCenter, flexRow } from "@styles";
+import { flexCenter } from "@styles";
 
 const PfOverlayCss = css`
   display: inline-block;
