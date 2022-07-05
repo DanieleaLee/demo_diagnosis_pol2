@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 import Colors from "@styles/colors";
-import { flexRowBetween } from "src/styles";
+import { flexRowBetween } from "@styles";
 
 const ContainerWrap = (width: number = 805, height: number = 1) => css`
   width: ${width}px;

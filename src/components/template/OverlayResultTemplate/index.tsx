@@ -1,12 +1,11 @@
 import { css } from "@emotion/react";
-import { useState, useEffect } from "react";
-import React from "react";
+import React,{ useState, useEffect } from "react";
 import * as TextButton from "@components/atoms/TextButton";
 import Colors from "@styles/colors";
-import ComparisonAnalysis from "@components/thWorkingDirectory/ComparisonAnaylsis";
 import * as Typography from "@styles/typography";
-import ChartPerformance from "./ChartPerformance";
-import FilterBox, { ContentsType } from "./FilterBox";
+import ChartPerformance from "./customComponents/ChartPerformance";
+import FilterBox, { ContentsType }  from "./customComponents/FilterBox";
+import ComparisonAnalysis from "@components/thWorkingDirectory/ComparisonAnaylsis";
 import { overlay_result_filterbox } from "src/data/overlay_result_filterbox";
 import { BODY_BUTTONS_HEIGHT } from "src/config/constants";
 import diagnosisData from "src/data/diagnosis";

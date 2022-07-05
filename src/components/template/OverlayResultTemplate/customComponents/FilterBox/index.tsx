@@ -4,9 +4,9 @@ import { BiHelpCircle } from "react-icons/bi";
 import Colors from "@styles/colors";
 import * as Typography from "@styles/typography";
 import { flexCenter, flexRow, flexColumn } from "@styles";
+import Dropdown from "./Dropdown";
+import SelectPeriod from "./SelectPeriod";
 import * as TextButton from "@components/atoms/TextButton";
-import Dropdown from "@components/template/OverlayResultTemplate/FilterBox/Dropdown";
-import SelectPeriod from "@components/template/OverlayResultTemplate/FilterBox/SelectPeriod";
 import { flexRowStyle } from "@components/template/OverlayConfigTemplate";
 
 const flexColumnStyle = css`

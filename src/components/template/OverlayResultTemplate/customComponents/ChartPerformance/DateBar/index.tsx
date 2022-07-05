@@ -1,12 +1,11 @@
 import React from "react";
 import { css } from "@emotion/react";
-import { flexCenter, flexColumn, flexRowBetween } from "@styles";
+import {flexColumn } from "@styles";
 import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
-import {ContentsType} from "@components/template/OverlayResultTemplate/FilterBox";
+import {ContentsType} from "@components/template/OverlayResultTemplate/customComponents/FilterBox";
 import OverlayBalloon from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer/OverlayBalloon";
-import {DataType, PeriodData} from "@components/template/OverlayResultTemplate/customComponent/ChartPerformance";
-import { ConsoleLogger } from "@aws-amplify/core";
+import {DataType, PeriodData} from "@components/template/OverlayResultTemplate/customComponents/ChartPerformance";
 
 const PfOlDateBarBodyCss = (width: number = 805) => css`
   width: ${width}px;

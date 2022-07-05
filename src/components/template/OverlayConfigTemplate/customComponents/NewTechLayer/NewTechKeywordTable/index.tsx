@@ -8,7 +8,7 @@ import { flexCenter } from "@styles";
 import * as Typography from "@styles/typography";
 import HeaderSort from "@components/molecules/HeaderSort";
 import { NewTechDataType } from "@components/template/OverlayConfigTemplate/customComponents/NewTechLayer";
-import RangeBar from "src/components/template/OverlayConfigTemplate/customComponents/Rangebar";
+import RangeBar from "@components/template/OverlayConfigTemplate/customComponents/Rangebar";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 
 const TbContainerCss = css`

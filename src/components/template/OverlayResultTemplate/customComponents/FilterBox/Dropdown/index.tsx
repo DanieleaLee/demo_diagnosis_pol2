@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import { BiCaretDown, BiChevronDown, BiSearchAlt2 } from "react-icons/bi";
+import {  BiChevronDown, BiSearchAlt2 } from "react-icons/bi";
 import { css } from "@emotion/react";
 import * as Typography from "@styles/typography";
 import Colors from "@styles/colors";
 import { flexRow, flexRowBetween } from "@styles";
-import {ContentsType} from "@components/template/OverlayResultTemplate/FilterBox";
+import {ContentsType} from "@components/template/OverlayResultTemplate/customComponents/FilterBox";
 import RadioSelection from "@components/template/OverlayConfigTemplate/customComponents/RadioSelection";
 
 const PfOlContainerCss = (width: number = 185) => css`

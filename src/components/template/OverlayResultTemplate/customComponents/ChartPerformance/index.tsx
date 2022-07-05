@@ -4,7 +4,7 @@ import Colors from "@styles/colors";
 import { flexColumn } from "@styles";
 import * as Typography from "@styles/typography";
 import PCLineChart2 from "@components/customCharts/PCLine2Chart";
-import { ContentsType } from "@components/template/OverlayResultTemplate/FilterBox";
+import { ContentsType } from "@components/template/OverlayResultTemplate/customComponents/FilterBox";
 import PerformanceTable from "./PerformanceTable";
 import PeriodAxis from "./PeriodAxis";
 import DateBar from "./DateBar";

@@ -5,8 +5,8 @@ import { useTable, useGlobalFilter } from "react-table";
 import Colors from "@styles/colors";
 import { flexRow } from "@styles";
 import * as Typography from "@styles/typography";
-import { TableDataType } from "@components/template/OverlayResultTemplate/ChartPerformance";
-import { ContentsType } from "@components/template/OverlayResultTemplate/FilterBox";
+import { TableDataType } from "@components/template/OverlayResultTemplate/customComponents/ChartPerformance";
+import { ContentsType } from "@components/template/OverlayResultTemplate/customComponents/FilterBox";
 import SingleScoreChart from "@components/customCharts/SingleScoreChart";
 
 const PfOLPerformanceTbContainerCss = css`
